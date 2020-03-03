@@ -109,20 +109,20 @@ public class AuthService {
 
         user1.setPassword(passwordEncoder.encode(user1.getPassword()));
 
-        if(signUpRequest.getRole().equals("ROLE_USER")) {
-            Role userRole = roleRepository.findByName(RoleName.ROLE_USER)
-                    .orElseThrow(() -> new AppException("User Role not set."));
-            user1.setRoles(signUpRequest.getRole());
-        }else if(signUpRequest.getRole().equals("ROLE_ADMIN")){
-            Role userRole = roleRepository.findByName(RoleName.ROLE_ADMIN)
-                    .orElseThrow(() -> new AppException("User Role not set."));
-            user1.setRoles(signUpRequest.getRole());
-        }else if(signUpRequest.getRole().equals("ROLE_MERCHANT")){
-            Role userRole = roleRepository.findByName(RoleName.ROLE_MERCHANT)
-                    .orElseThrow(() -> new AppException("User Role not set."));
-            user1.setRoles(signUpRequest.getRole());
-        }
-
+//        if(signUpRequest.getRole().equals("ROLE_USER")) {
+//            Role userRole = roleRepository.findByName(RoleName.ROLE_USER)
+//                    .orElseThrow(() -> new AppException("User Role not set."));
+//            user1.setRoles(signUpRequest.getRole());
+//        }else if(signUpRequest.getRole().equals("ROLE_ADMIN")){
+//            Role userRole = roleRepository.findByName(RoleName.ROLE_ADMIN)
+//                    .orElseThrow(() -> new AppException("User Role not set."));
+//            user1.setRoles(signUpRequest.getRole());
+//        }else if(signUpRequest.getRole().equals("ROLE_MERCHANT")){
+//            Role userRole = roleRepository.findByName(RoleName.ROLE_MERCHANT)
+//                    .orElseThrow(() -> new AppException("User Role not set."));
+//            user1.setRoles(signUpRequest.getRole());
+//        }
+        user1.setRoles(signUpRequest.getRole());
         Users result = userRepository.save(user1);
 
         URI location = ServletUriComponentsBuilder
