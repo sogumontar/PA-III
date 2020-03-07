@@ -86,7 +86,7 @@ public class AuthService {
         status = user.getStatus();
         String name= user.getName();
         System.out.println(user.getSku());
-        return ResponseEntity.ok(new JwtAuthenticationResponse(jwt,temp,skuLogin,status,name));
+        return ResponseEntity.ok(new JwtAuthenticationResponse(jwt,temp,skuLogin,name));
     }
 
 

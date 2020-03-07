@@ -9,7 +9,6 @@ public class JwtAuthenticationResponse {
     private String tokenType = "Bearer";
     private String role;
     private String skuLog;
-    private Integer status;
     private String name;
 
     public JwtAuthenticationResponse(String accessToken , String role) {
@@ -17,11 +16,10 @@ public class JwtAuthenticationResponse {
         this.role = role;
     }
 
-    public JwtAuthenticationResponse(String accessToken, String role, String skuLog,Integer status,String name) {
+    public JwtAuthenticationResponse(String accessToken, String role, String skuLog,String name) {
         this.accessToken = accessToken;
         this.role = role;
         this.skuLog = skuLog;
-        this.status = status;
         this.name = name;
     }
 
@@ -57,13 +55,13 @@ public class JwtAuthenticationResponse {
         this.role = role;
     }
 
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
+//    public Integer getStatus() {
+//        return status;
+//    }
+//
+//    public void setStatus(Integer status) {
+//        this.status = status;
+//    }
 
     public String getName() {
         return name;
