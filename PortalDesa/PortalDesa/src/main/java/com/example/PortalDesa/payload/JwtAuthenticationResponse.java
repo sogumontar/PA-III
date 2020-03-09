@@ -20,10 +20,10 @@ public class JwtAuthenticationResponse {
         this.accessToken = accessToken;
         this.role = role;
         this.skuLog = skuLog;
-        this.name = name;
-    }
 
-    public String getSkuLog() {
+    public String getSkuL this.name = name;
+}
+    og() {
         return skuLog;
     }
 

@@ -74,11 +74,13 @@ public class AuthController {
 //        return authService.authenticateUser(loginRequest);
     }
 
+    @CrossOrigin
     @PostMapping("/signup")
     public ResponseEntity<?> register(@RequestBody SignUpRequest signUpRequest){
         return authServiceImpl.registerUser(signUpRequest);
     }
 
+    @CrossOrigin
     @PostMapping("/logout")
     public static void myLogoff(HttpServletRequest request, HttpServletResponse response) {
         CookieClearingLogoutHandler cookieClearingLogoutHandler = new CookieClearingLogoutHandler(AbstractRememberMeServices.SPRING_SECURITY_REMEMBER_ME_COOKIE_KEY);
@@ -87,6 +89,7 @@ public class AuthController {
         securityContextLogoutHandler.logout(request, response, null);
     }
 
+    @CrossOrigin
     @GetMapping("/tol")
     public String tol(){
         return "tetsing";
