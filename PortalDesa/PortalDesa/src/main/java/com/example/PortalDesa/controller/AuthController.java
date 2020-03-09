@@ -1,6 +1,5 @@
 package com.example.PortalDesa.controller;
 
-import com.example.PortalDesa.model.Users;
 import com.example.PortalDesa.payload.JwtAuthenticationResponse;
 import com.example.PortalDesa.payload.LoginRequest;
 import com.example.PortalDesa.payload.SignUpRequest;
@@ -8,7 +7,6 @@ import com.example.PortalDesa.repository.RoleRepository;
 import com.example.PortalDesa.repository.UserRepository;
 import com.example.PortalDesa.security.JwtTokenProvider;
 import com.example.PortalDesa.security.UserPrincipal;
-import com.example.PortalDesa.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
