@@ -7,6 +7,7 @@ import com.example.PortalDesa.repository.RoleRepository;
 import com.example.PortalDesa.repository.UserRepository;
 import com.example.PortalDesa.security.JwtTokenProvider;
 import com.example.PortalDesa.security.UserPrincipal;
+import com.example.PortalDesa.service.impl.AuthServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -45,8 +46,9 @@ public class AuthController {
     JwtTokenProvider tokenProvider;
 
     @Autowired
-    AuthService authService;
+    AuthServiceImpl authServiceImpl;
 
+    @CrossOrigin
     @PostMapping("/signin")
     public ResponseEntity<?> login(@Valid @RequestBody LoginRequest loginRequest){
         Authentication authentication = authenticationManager.authenticate(
@@ -74,7 +76,7 @@ public class AuthController {
 
     @PostMapping("/signup")
     public ResponseEntity<?> register(@RequestBody SignUpRequest signUpRequest){
-        return authService.registerUser(signUpRequest);
+        return authServiceImpl.registerUser(signUpRequest);
     }
 
     @PostMapping("/logout")
