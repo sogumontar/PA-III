@@ -1,5 +1,6 @@
 package com.example.PortalDesa.model;
 
+import com.example.PortalDesa.model.template.ModelConstant;
 import lombok.Builder;
 
 import javax.persistence.Column;

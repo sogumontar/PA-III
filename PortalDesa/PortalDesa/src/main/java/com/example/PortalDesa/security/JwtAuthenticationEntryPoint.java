@@ -20,10 +20,26 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
     private static final Logger logger = LoggerFactory.getLogger(JwtAuthenticationEntryPoint.class);
     @Override
-    public void commence(HttpServletRequest httpServletRequest,
-                         HttpServletResponse httpServletResponse,
-                         AuthenticationException e) throws IOException, ServletException {
-        logger.error("Responding with unauthorized error. Message - {}", e.getMessage());
-        httpServletResponse.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.getMessage());
+//    public void commence(HttpServletRequest httpServletRequest,
+//                         HttpServletResponse httpServletResponse,
+//                         AuthenticationException e) throws IOException, ServletException {
+//        logger.error("Responding with unauthorized error. Message - {}", e.getMessage());
+//        httpServletResponse.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.getMessage());
+//    }
+//    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authenticationException) throws IOException, ServletException {
+//
+//        response.setContentType("application/json");
+//        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+//        response.getOutputStream().println("{ \"error\": \"" + authenticationException.getMessage() + "\" }");
+//
+//    }
+
+    public void commence(HttpServletRequest request,
+                         HttpServletResponse response,
+                         AuthenticationException e)
+            throws IOException, ServletException {
+
+        logger.error("Unauthorized error. Message - {}", e.getMessage());
+        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.getMessage());
     }
 }
