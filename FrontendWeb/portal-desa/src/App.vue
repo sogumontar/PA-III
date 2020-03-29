@@ -22,7 +22,7 @@
               <b-dropdown-item href="/">Profile</b-dropdown-item>
               <b-dropdown-item href="/about">Keranjang</b-dropdown-item>
               <b-dropdown-item href="/">Pesanan</b-dropdown-item>
-              <b-dropdown-item href="/about">Logout</b-dropdown-item>
+              <b-dropdown-item href="/login">Login</b-dropdown-item>
             </b-nav-item-dropdown>
 
             <b-navbar-brand href="#" ></b-navbar-brand>
