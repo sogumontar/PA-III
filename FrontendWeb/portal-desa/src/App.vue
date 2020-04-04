@@ -12,13 +12,14 @@
             <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
           </b-nav-form>
 
-          <b-navbar-nav class="ml-auto">
-            <b-navbar-nav>
-              <b-nav-item href="/desa">Produk</b-nav-item>
-              <b-nav-item href="/produk" >Desa</b-nav-item>
+          <b-navbar-nav class="ml-auto mt-2">
+            <b-navbar-nav class="mr-4">
+              <b-nav-item href="/desa" class="">Produk</b-nav-item>
+              <b-nav-item href="/produk" class="" >Desa</b-nav-item>
             </b-navbar-nav>
-            <img alt="Vue logo" src="./assets/pict/profile.png" width="45px" height="45px" >
-            <b-nav-item-dropdown  right>
+            <p class="h2"><b-icon-people-circle></b-icon-people-circle></p>
+<!--            <img alt="Vue logo" src="./assets/pict/profile.png" width="45px" height="45px" >-->
+            <b-nav-item-dropdown  right class="">
               <b-dropdown-item href="/">Profile</b-dropdown-item>
               <b-dropdown-item href="/about">Keranjang</b-dropdown-item>
               <b-dropdown-item href="/">Pesanan</b-dropdown-item>
