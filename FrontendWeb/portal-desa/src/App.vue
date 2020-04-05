@@ -1,5 +1,6 @@
 <template>
   <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div >
       <b-navbar id="navb" toggleable="lg" type="dark" >
         <b-navbar-brand href="#"><img alt="Vue logo" src="./assets/pict/logo.png" width="30px" ></b-navbar-brand>
@@ -12,13 +13,14 @@
             <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
           </b-nav-form>
 
-          <b-navbar-nav class="ml-auto">
-            <b-navbar-nav>
-              <b-nav-item href="/desa">Produk</b-nav-item>
-              <b-nav-item href="/produk" >Desa</b-nav-item>
+          <b-navbar-nav class="ml-auto mt-1">
+            <b-navbar-nav class="mr-4">
+              <b-nav-item href="/desa" class="">Produk</b-nav-item>
+              <b-nav-item href="/produk" class="" >Desa</b-nav-item>
             </b-navbar-nav>
-            <img alt="Vue logo" src="./assets/pict/profile.png" width="45px" height="45px" >
-            <b-nav-item-dropdown  right>
+            <p class="h2"><b-icon-people-circle></b-icon-people-circle></p>
+<!--            <img alt="Vue logo" src="./assets/pict/profile.png" width="45px" height="45px" >-->
+            <b-nav-item-dropdown  right class="">
               <b-dropdown-item href="/">Profile</b-dropdown-item>
               <b-dropdown-item href="/about">Keranjang</b-dropdown-item>
               <b-dropdown-item href="/">Pesanan</b-dropdown-item>
@@ -40,4 +42,30 @@
   #navb{
     background-color: #ACE7EF;
   }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+  }
+
 </style>
