@@ -1,73 +1,73 @@
 <template>
     <b-container>
 
-        <b-row class="justify-content-sm-center">
-            <b-col col md="auto" sm="auto">
-                <p id="logo"><b-icon-people-circle></b-icon-people-circle></p>
+    <b-row class="justify-content-sm-center">
+        <b-col col md="auto" sm="auto">
+            <p id="logo"><b-icon-people-circle></b-icon-people-circle></p>
+        </b-col>
+    </b-row>
+
+    <b-form @submit="onSubmit" class="mt-3">
+        <b-form-row class="justify-content-sm-center">
+            <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                <p>Email</p>
             </b-col>
-        </b-row>
+            <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
+                <p>:</p>
+            </b-col>
+            <b-col cols="8"  col md="5" lg="4" sm="7">
+                <b-form-input
+                        id="input-email"
+                        v-model="form.email"
+                        required
+                        type="email"
+                ></b-form-input>
+            </b-col>
+        </b-form-row>
 
-        <b-form @submit="onSubmit" class="mt-3">
-            <b-form-row class="justify-content-sm-center">
-                <b-col cols="auto" col md="auto" lg="1" class="mt-2">
-                    <p>Username</p>
-                </b-col>
-                <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
-                    <p>:</p>
-                </b-col>
-                <b-col cols="8"  col md="5" lg="4" sm="7">
-                    <b-form-input
-                            id="input-email"
-                            v-model="form.username"
-                            required
-                            type="text"
-                    ></b-form-input>
-                </b-col>
-            </b-form-row>
+        <b-form-row class="justify-content-sm-center mt-3">
+            <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                <p>Password</p>
+            </b-col>
+            <b-col cols="auto" col md="auto" lg="auto" class="mt-2">
+                <p>:</p>
+            </b-col>
+            <b-col cols="8" col md="5" lg="4" sm="7">
+                <b-form-input
+                        id="input-password"
+                        v-model="form.password"
+                        required
+                        type="password"
+                ></b-form-input>
+            </b-col>
+        </b-form-row>
 
-            <b-form-row class="justify-content-sm-center mt-3">
-                <b-col cols="auto" col md="auto" lg="1" class="mt-2">
-                    <p>Password</p>
-                </b-col>
-                <b-col cols="auto" col md="auto" lg="auto" class="mt-2">
-                    <p>:</p>
-                </b-col>
-                <b-col cols="8" col md="5" lg="4" sm="7">
-                    <b-form-input
-                            id="input-password"
-                            v-model="form.password"
-                            required
-                            type="password"
-                    ></b-form-input>
-                </b-col>
-            </b-form-row>
-
-            <b-form-row class="justify-content-md-center">
-                <b-col col md="4" lg="2">
-
-                </b-col>
-                <b-col col md="auto" lg="auto" >
-
-                </b-col>
-                <b-col col md="auto" lg="auto" class="mt-4">
-                    <b-button type="submit" variant="primary" id="tombol-masuk" class="pl-3 pr-3">Masuk</b-button>
-                </b-col>
-            </b-form-row>
-        </b-form>
-
-        <b-row class="justify-content-sm-center ">
-            <b-col cols="3" col md="2" lg="1">
+        <b-form-row class="justify-content-md-center">
+            <b-col col md="4" lg="2">
 
             </b-col>
-            <b-col cols="auto" col md="1" lg="1">
+            <b-col col md="auto" lg="auto" >
 
             </b-col>
-            <b-col cols="auto" col md="auto" lg="auto" class="mt-3">
-                <p id="font-register">Belum punya akun? <a href="/produk">Register</a></p>
+            <b-col col md="auto" lg="auto" class="mt-4">
+                <b-button type="submit" variant="primary" id="tombol-masuk" class="pl-3 pr-3">Masuk</b-button>
             </b-col>
-        </b-row>
+        </b-form-row>
+    </b-form>
 
-    </b-container>
+    <b-row class="justify-content-sm-center ">
+        <b-col cols="3" col md="2" lg="1">
+
+        </b-col>
+        <b-col cols="auto" col md="1" lg="1">
+
+        </b-col>
+        <b-col cols="auto" col md="auto" lg="auto" class="mt-3">
+            <p id="font-register">Belum punya akun? <a href="/register">Register</a></p>
+        </b-col>
+    </b-row>
+
+</b-container>
 </template>
 
 <script>
@@ -75,7 +75,7 @@
         data(){
           return {
               form: {
-                  username: '',
+                  email: '',
                   password: '',
               }
           }
