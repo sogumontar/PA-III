@@ -1,5 +1,8 @@
 package com.example.PortalDesa.config;
 
+import com.example.PortalDesa.security.CustomUserDetailsService;
+import com.example.PortalDesa.security.JwtAuthenticationEntryPoint;
+import com.example.PortalDesa.security.JwtAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,27 +30,27 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 )
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-//    @Autowired
-//    CustomUserDetailsService customUserDetailsService;
-//
-//    @Autowired
-//    private JwtAuthenticationEntryPoint unauthorizedHandler;
-//
-//    @Bean
-//    public JwtAuthenticationFilter jwtAuthenticationFilter() {
-//        return new JwtAuthenticationFilter();
-//    }
+    @Autowired
+    CustomUserDetailsService customUserDetailsService;
+
+    @Autowired
+    private JwtAuthenticationEntryPoint unauthorizedHandler;
+
+    @Bean
+    public JwtAuthenticationFilter jwtAuthenticationFilter() {
+        return new JwtAuthenticationFilter();
+    }
 
 
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-//    @Override
-//    public void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
-//        authenticationManagerBuilder
-//                .userDetailsService(customUserDetailsService);
-//    }
+    @Override
+    public void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
+        authenticationManagerBuilder
+                .userDetailsService(customUserDetailsService);
+    }
 
     @Bean(BeanIds.AUTHENTICATION_MANAGER)
     @Override
@@ -63,7 +66,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf()
                 .disable()
                 .exceptionHandling()
-//                .authenticationEntryPoint(unauthorizedHandler)
+                .authenticationEntryPoint(unauthorizedHandler)
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -85,7 +88,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         ;
 
         // Add our custom JWT security filter
-//        http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
 
     }
 }
