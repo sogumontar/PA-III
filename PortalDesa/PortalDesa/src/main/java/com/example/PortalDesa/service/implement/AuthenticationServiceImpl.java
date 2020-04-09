@@ -1,5 +1,7 @@
 package com.example.PortalDesa.service.implement;
 
+import com.example.PortalDesa.exception.AppException;
+import com.example.PortalDesa.exception.AuthException;
 import com.example.PortalDesa.model.RoleName;
 import com.example.PortalDesa.model.Roles;
 import com.example.PortalDesa.model.SequenceUsers;
@@ -107,7 +109,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         Users user = usersService.findByUsername(loginRequest.getUsername());
         UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
         String role=userPrincipal.getAuthorities().toString();
-//        if (userPrincipal.getStatus()!=1) throw new AuthException("User has been blocked");
+        if (userPrincipal.getStatus()!=1) throw new AuthException("User has been blocked");
         String token=jwtTokenProvider.generateToken(authentication);
         return ResponseEntity.ok(new JwtLoginResponse(
                 token,
@@ -138,9 +140,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         }else if(role.equals(RoleName.ROLE_MERCHANT)){
             roleName=RoleName.ROLE_MERCHANT;
         }
-        roles=null;
-//        roles = roleRepo.findByName(roleName)
-//                .orElseThrow(() -> new AppException("User Role not set."));
+        roles = roleRepo.findByName(roleName)
+                .orElseThrow(() -> new AppException("User Role not set."));
         return roles;
     }
 
