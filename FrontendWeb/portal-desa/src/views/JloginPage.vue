@@ -1,10 +1,18 @@
 <template>
     <b-container>
 
-        <b-row class="justify-content-sm-center">
-            <b-col col md="auto" sm="auto">
-                <p id="logo"><b-icon-people-circle></b-icon-people-circle></p>
+    <b-row class="justify-content-sm-center">
+        <b-col col md="auto" sm="auto">
+            <p id="logo"><b-icon-people-circle></b-icon-people-circle></p>
+        </b-col>
+    </b-row>
+
+    <b-form @submit="onSubmit" class="mt-3">
+        <b-form-row class="justify-content-sm-center">
+            <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                <p>Email</p>
             </b-col>
+<<<<<<< HEAD
         </b-row>
 
         <b-form @submit="onSubmit" class="mt-3">
@@ -47,11 +55,46 @@
 
         <b-row class="justify-content-sm-center ">
             <b-col cols="3" col md="2" lg="1">
+=======
+            <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
+                <p>:</p>
+            </b-col>
+            <b-col cols="8"  col md="5" lg="4" sm="7">
+                <b-form-input
+                        id="input-email"
+                        v-model="form.email"
+                        required
+                        type="email"
+                ></b-form-input>
+            </b-col>
+        </b-form-row>
+
+        <b-form-row class="justify-content-sm-center mt-3">
+            <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                <p>Password</p>
+            </b-col>
+            <b-col cols="auto" col md="auto" lg="auto" class="mt-2">
+                <p>:</p>
+            </b-col>
+            <b-col cols="8" col md="5" lg="4" sm="7">
+                <b-form-input
+                        id="input-password"
+                        v-model="form.password"
+                        required
+                        type="password"
+                ></b-form-input>
+            </b-col>
+        </b-form-row>
+
+        <b-form-row class="justify-content-md-center">
+            <b-col col md="4" lg="2">
+>>>>>>> ba4e61206cdb5a5eca2fde7deee1d18cde433bd2
 
             </b-col>
-            <b-col cols="auto" col md="1" lg="1">
+            <b-col col md="auto" lg="auto" >
 
             </b-col>
+<<<<<<< HEAD
             <b-col cols="auto" col md="auto" lg="auto" class="mt-3">
                 <p id="font-register">Belum punya askun?<router-link to="/register">Register</router-link></p>
             </b-col>
@@ -60,6 +103,27 @@
         {{responses}}
     </pre>
     </b-container>
+=======
+            <b-col col md="auto" lg="auto" class="mt-4">
+                <b-button type="submit" variant="primary" id="tombol-masuk" class="pl-3 pr-3">Masuk</b-button>
+            </b-col>
+        </b-form-row>
+    </b-form>
+
+    <b-row class="justify-content-sm-center ">
+        <b-col cols="3" col md="2" lg="1">
+
+        </b-col>
+        <b-col cols="auto" col md="1" lg="1">
+
+        </b-col>
+        <b-col cols="auto" col md="auto" lg="auto" class="mt-3">
+            <p id="font-register">Belum punya akun? <a href="/register">Register</a></p>
+        </b-col>
+    </b-row>
+
+</b-container>
+>>>>>>> ba4e61206cdb5a5eca2fde7deee1d18cde433bd2
 </template>
 
 <script>
@@ -68,7 +132,12 @@
     export default {
         data(){
           return {
+<<<<<<< HEAD
                   username: '',
+=======
+              form: {
+                  email: '',
+>>>>>>> ba4e61206cdb5a5eca2fde7deee1d18cde433bd2
                   password: '',
                   responses : ''
           }

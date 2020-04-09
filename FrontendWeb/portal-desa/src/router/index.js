@@ -4,7 +4,11 @@ import JhomePage from "../views/JhomePage.vue";
 import DesaPage from "../views/DesaPage";
 import ProductPage from "../views/ProductPage";
 import JloginPage from "../views/JloginPage";
+<<<<<<< HEAD
 import Register from "../views/Register";
+=======
+import JregisterPage from "../views/JregisterPage";
+>>>>>>> ba4e61206cdb5a5eca2fde7deee1d18cde433bd2
 
 Vue.use(VueRouter);
 
@@ -42,6 +46,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
+  },
+  {
+    path: "/register",
+    name: "RegisterPage",
+    component: JregisterPage
   }
 ];
 
