@@ -50,9 +50,6 @@ public class Users extends Timestamp {
     @Column(name = "status")
     public int status;
 
-    public Users(){
-
-    }
     public Users(String sku, String nickname, String username, @Email String email, String password, int status) {
         this.sku = sku;
         this.nickname = nickname;
