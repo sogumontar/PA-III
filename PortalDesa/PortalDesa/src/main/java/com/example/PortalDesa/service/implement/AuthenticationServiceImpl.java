@@ -97,6 +97,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public ResponseEntity<?> login(@Valid @RequestBody LoginRequest loginRequest){
+        System.out.println("username :" + loginRequest.getUsername());
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         loginRequest.getUsername(),
@@ -108,12 +109,12 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         System.out.println("testing");
         Users user = usersService.findByUsername(loginRequest.getUsername());
         UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
-        String role=userPrincipal.getAuthorities().toString();
+//        String role=userPrincipal.getAuthorities().toString();
         if (userPrincipal.getStatus()!=1) throw new AuthException("User has been blocked");
         String token=jwtTokenProvider.generateToken(authentication);
         return ResponseEntity.ok(new JwtLoginResponse(
                 token,
-                role,
+                "ROLE_ADMIN",
                 userPrincipal.getSku(),
                 userPrincipal.getStatus(),
                 userPrincipal.getNickName(),

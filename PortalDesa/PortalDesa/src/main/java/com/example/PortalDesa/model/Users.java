@@ -13,6 +13,7 @@ import java.util.Set;
  * Created by Sogumontar Hendra Simangunsong on 07/04/2020.
  */
 
+@NoArgsConstructor
 @Entity
 //@Table(name = TablesConstant.TABEL_USER, uniqueConstraints = {
 //        @UniqueConstraint(columnNames = {

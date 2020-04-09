@@ -16,12 +16,7 @@
                     <p>:</p>
                 </b-col>
                 <b-col cols="8"  col md="5" lg="4" sm="7">
-                    <b-form-input
-                            id="input-email"
-                            v-model="form.username"
-                            required
-                            type="text"
-                    ></b-form-input>
+                    <b-form-input id="input-email" v-model="username" required type="text"></b-form-input>
                 </b-col>
             </b-form-row>
 
@@ -33,12 +28,7 @@
                     <p>:</p>
                 </b-col>
                 <b-col cols="8" col md="5" lg="4" sm="7">
-                    <b-form-input
-                            id="input-password"
-                            v-model="form.password"
-                            required
-                            type="password"
-                    ></b-form-input>
+                    <b-form-input id="input-password" v-model="password" required type="password"></b-form-input>
                 </b-col>
             </b-form-row>
 
@@ -63,27 +53,48 @@
 
             </b-col>
             <b-col cols="auto" col md="auto" lg="auto" class="mt-3">
-                <p id="font-register">Belum punya akun? <a href="/produk">Register</a></p>
+                <p id="font-register">Belum punya askun?<router-link to="/register">Register</router-link></p>
             </b-col>
         </b-row>
-
+    <pre>
+        {{responses}}
+    </pre>
     </b-container>
 </template>
 
 <script>
+    import axios from "axios";
+
     export default {
         data(){
           return {
-              form: {
                   username: '',
                   password: '',
-              }
+                  responses : ''
           }
         },
         name: "JloginPage",
         methods: {
-            onSubmit(){
-                alert(JSON.stringify(this.form))
+            onSubmit(e) {
+                e.preventDefault();
+                let currentObj = this;
+                axios.post('http://localhost:8800/auth/signin', {
+                    username : this.username,
+                    password : this.password
+                })
+                    .then(function (response) {
+                        currentObj.responses = response.data;
+                        if(response.data.accessToken){
+                            console.log("Login Success")
+                            // this.$router.go("/")
+                            window.location.href = "/"
+                            // this.$router.push('/produk')
+                        }
+                    })
+                    .catch(function () {
+
+                        currentObj.responses = "Login Failed, Check your username/password";
+                    });
             }
         }
     }
