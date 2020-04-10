@@ -9,13 +9,13 @@
 
     <b-form @submit="onSubmit" class="mt-3">
         <b-form-row class="justify-content-sm-center">
-            <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+            <b-col cols="1" col md="auto" lg="1" class="mt-2">
                 <p>Email</p>
             </b-col>
-            <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
+            <b-col cols="1" col md="auto" lg="auto" sm="auto" class="mt-2">
                 <p>:</p>
             </b-col>
-            <b-col cols="8"  col md="5" lg="4" sm="7">
+            <b-col cols="6"  col md="5" lg="4" sm="7">
                 <b-form-input
                         id="input-email"
                         v-model="form.email"
@@ -63,7 +63,7 @@
 
         </b-col>
         <b-col cols="auto" col md="auto" lg="auto" class="mt-3">
-            <p id="font-register">Belum punya akun? <a href="/register">Register</a></p>
+            <p id="font-register">Belum punya akun? <router-link to="/register">Register</router-link></p>
         </b-col>
     </b-row>
 
