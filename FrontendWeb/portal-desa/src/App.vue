@@ -15,19 +15,19 @@
 
           <b-navbar-nav class="ml-auto mt-1">
             <b-navbar-nav class="mr-4">
-              <b-nav-item href="/desa" class="">Produk</b-nav-item>
-              <b-nav-item href="/produk" class="" >Desa</b-nav-item>
+              <b-nav-item><router-link to="/produk">Produk</router-link></b-nav-item>
+              <b-nav-item><router-link to="/desa">Desa</router-link> </b-nav-item>
             </b-navbar-nav>
             <p class="h2"><b-icon-people-circle></b-icon-people-circle></p>
 <!--            <img alt="Vue logo" src="./assets/pict/profile.png" width="45px" height="45px" >-->
             <b-nav-item-dropdown  right class="">
-              <b-dropdown-item href="/">Profile</b-dropdown-item>
-              <b-dropdown-item href="/about">Keranjang</b-dropdown-item>
-              <b-dropdown-item href="/">Pesanan</b-dropdown-item>
-              <b-dropdown-item href="/login">Login</b-dropdown-item>
+              <b-dropdown-item><router-link to="/">Profile</router-link></b-dropdown-item>
+              <b-dropdown-item><router-link to="/">Keranjang</router-link></b-dropdown-item>
+              <b-dropdown-item><router-link to="/">Pesanan</router-link></b-dropdown-item>
+              <b-dropdown-item><router-link to="/login">Login</router-link></b-dropdown-item>
             </b-nav-item-dropdown>
 
-            <b-navbar-brand href="#" ></b-navbar-brand>
+            <b-navbar-brand><router-link to="/"></router-link> </b-navbar-brand>
 
           </b-navbar-nav>
         </b-collapse>
