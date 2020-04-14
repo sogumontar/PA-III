@@ -17,7 +17,10 @@ import javax.validation.constraints.NotBlank;
 public class RegisterRequest {
 
     @NotBlank
-    private String nickname;
+    private String name;
+
+    @NotBlank
+    private String alamat;
 
     @NotBlank
     private String username;
@@ -35,17 +38,24 @@ public class RegisterRequest {
     @NotBlank
     private RoleName role;
 
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
     public String getUsername() {
         return username;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
     }
 
     public void setUsername(String username) {

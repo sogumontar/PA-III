@@ -28,8 +28,11 @@ public class Users extends Timestamp {
     @Id
     public String sku;
 
-    @Column(name = "nickname")
-    public String  nickname;
+    @Column(name = "name")
+    public String  name;
+
+    @Column(name = "alamat")
+    public String alamat;
 
     @Column(name = "username")
     public String username;
@@ -51,9 +54,10 @@ public class Users extends Timestamp {
     @Column(name = "status")
     public int status;
 
-    public Users(String sku, String nickname, String username, @Email String email, String password, int status) {
+    public Users(String sku, String name, String alamat, String username, @Email String email, String password, int status) {
         this.sku = sku;
-        this.nickname = nickname;
+        this.name = name;
+        this.alamat = alamat;
         this.username = username;
         this.email = email;
         this.password = password;
@@ -68,12 +72,12 @@ public class Users extends Timestamp {
         this.sku = sku;
     }
 
-    public String getNickname() {
-        return nickname;
+    public String getName() {
+        return name;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getUsername() {
@@ -114,5 +118,13 @@ public class Users extends Timestamp {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
     }
 }

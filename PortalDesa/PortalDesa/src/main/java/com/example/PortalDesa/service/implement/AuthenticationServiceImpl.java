@@ -78,7 +78,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         String skuFix=skuGenerator(registerRequest.getUsername(),roles.toString());
         Users users=new Users(
                 skuFix,
-                registerRequest.getNickname(),
+                registerRequest.getName(),
+                registerRequest.getAlamat(),
                 registerRequest.getUsername(),
                 registerRequest.getEmail(),
                 registerRequest.getPassword(),
@@ -117,7 +118,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
                 "ROLE_ADMIN",
                 userPrincipal.getSku(),
                 userPrincipal.getStatus(),
-                userPrincipal.getNickName(),
+                userPrincipal.getName(),
                 userPrincipal.getEmail())
         );
     }

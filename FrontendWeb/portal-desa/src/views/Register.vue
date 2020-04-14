@@ -28,7 +28,7 @@
         },
         data() {
             return {
-                nickname : '',
+                name : '',
                 username : '',
                 email : '',
                 password : '',
@@ -40,8 +40,8 @@
             formSubmit(e) {
                 e.preventDefault();
                 let currentObj = this;
-                axios.post('http://localhost:8800/auth/signup', {
-                    nickname : this.nickname,
+                axios.post('http://localhost:9000/auth/signup', {
+                    name : this.nickname,
                     username : this.username,
                     email : this.email,
                     password : this.password,
@@ -53,6 +53,7 @@
                         if(response.data.accessToken){
                             console.log("Register Success")
                         }
+
                         this.$router.push({name: 'Login'})
                     })
                     .catch(function (err) {

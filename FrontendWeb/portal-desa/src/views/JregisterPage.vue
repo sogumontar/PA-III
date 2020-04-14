@@ -1,5 +1,5 @@
 <template>
-    <b-container>
+    <b-container class="mb-5">
 
         <b-row class="justify-content-sm-center">
             <b-col col md="auto" sm="auto">
@@ -7,12 +7,7 @@
             </b-col>
         </b-row>
 
-        <ul>
-        <li v-for="error in form.errors" v-bind:key="error">{{ error }}</li>
-        </ul>
-
-
-        <b-form @submit="onSubmit" class="mt-3">
+        <b-form @submit="formSubmit" class="mt-3">
 
             <b-form-row class="justify-content-sm-center">
                 <b-col cols="auto" col md="auto" lg="1" class="mt-2">
@@ -24,7 +19,7 @@
                 <b-col cols="8"  col md="5" lg="4" sm="7">
                     <b-form-input
                             id="input-nama"
-                            v-model="form.nama"
+                            v-model="name"
                             required
                             type="text"
                     ></b-form-input>
@@ -41,10 +36,27 @@
                 <b-col cols="8" col md="5" lg="4" sm="7" >
                     <b-textarea
                             id="input-alamat"
-                            v-model="form.alamat"
+                            v-model="alamat"
                             required
                             rows="4"
                     ></b-textarea>
+                </b-col>
+            </b-form-row>
+
+            <b-form-row class="justify-content-sm-center mt-3">
+                <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                    <p>Username</p>
+                </b-col>
+                <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
+                    <p>:</p>
+                </b-col>
+                <b-col cols="8"  col md="5" lg="4" sm="7">
+                    <b-form-input
+                            id="input-username"
+                            v-model="username"
+                            required
+                            type="text"
+                    ></b-form-input>
                 </b-col>
             </b-form-row>
 
@@ -58,7 +70,7 @@
                 <b-col cols="8"  col md="5" lg="4" sm="7">
                     <b-form-input
                             id="input-email"
-                            v-model="form.email"
+                            v-model="email"
                             required
                             type="email"
                     ></b-form-input>
@@ -75,7 +87,7 @@
                 <b-col cols="8"  col md="5" lg="4" sm="7">
                     <b-form-input
                             id="input-password"
-                            v-model="form.password"
+                            v-model="password"
                             required
                             type="password"
                             name="password"
@@ -93,7 +105,7 @@
                 <b-col cols="8"  col md="5" lg="4" sm="7">
                     <b-form-input
                             id="input-ulang-password"
-                            v-model="form.repassword"
+                            v-model="confirmPassword"
                             required
                             type="password"
                             name="ulang-password"
@@ -108,42 +120,59 @@
 
                 </b-col>
                 <b-col col md="auto" lg="auto" class="mt-2">
-                    <b-button type="submit" variant="primary" id="tombol-daftar" class="pl-3 pr-3">Daftar</b-button>
+                    <button type="submit" id="tombol-daftar" class="pl-3 pr-3 btn btn-primary">Daftar</button>
                 </b-col>
             </b-form-row>
         </b-form>
+
+        <strong>Output:</strong>
+        <pre>
+            {{output}}
+        </pre>
+
     </b-container>
 </template>
 
 <script>
+    import axios from 'axios'
     export default {
-        name: "JregisterPage",
-        data(){
+        mounted() {
+            console.log('Component mounted.')
+        },
+        data() {
             return {
-                form: {
-                    nama: '',
-                    alamat: '',
-                    email: '',
-                    password: '',
-                    repassword: '',
-                }
-            }
+                name : '',
+                username : '',
+                email : '',
+                alamat : '',
+                password : '',
+                confirmPassword : '',
+                output: ''
+            };
         },
         methods: {
-            onSubmit(){
-                alert(JSON.stringify(this.form))
-            },
-        },
-        computed: {
-            cekSama(){
-                if(this.passwordsFilled()){
-                    return true
-                }else{
-                    return false
-                }
-            },
-            passwordsFilled(){
-                return (this.password !== '' && this.repassword !== '')
+            formSubmit(e) {
+                e.preventDefault();
+                let currentObj = this;
+                axios.post('http://localhost:9000/auth/signup', {
+                    name : this.name,
+                    username : this.username,
+                    email : this.email,
+                    alamat : this.alamat,
+                    password : this.password,
+                    confirmPassword : this.confirmPassword,
+                    role : "ROLE_USER"
+                })
+                    .then(function (response) {
+                        currentObj.output = response.data;
+                        if(response.data.accessToken){
+                            console.log("Register Success")
+                        }
+                        this.$router.push({name: 'Login'})
+                    })
+                    .catch(function (err) {
+                        currentObj.output = err;
+                    });
             }
         }
     }

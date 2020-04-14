@@ -87,19 +87,20 @@
                     <b-button type="submit" variant="primary" id="tombol-masuk" class="pl-3 pr-3">Masuk</b-button>
                 </b-col>
             </b-form-row>
+            <b-row class="justify-content-sm-center ">
+                <b-col cols="3" col md="2" lg="1">
+
+                </b-col>
+                <b-col cols="auto" col md="1" lg="1">
+
+                </b-col>
+                <b-col cols="auto" col md="auto" lg="auto" class="mt-3">
+                    <p id="font-register">Belum punya askun?<router-link to="/register">Register</router-link></p>
+                </b-col>
+            </b-row>
         </b-form>
 
-<!--        <b-row class="justify-content-sm-center ">-->
-<!--            <b-col cols="3" col md="2" lg="1">-->
 
-<!--            </b-col>-->
-<!--            <b-col cols="auto" col md="1" lg="1">-->
-
-<!--            </b-col>-->
-<!--            <b-col cols="auto" col md="auto" lg="auto" class="mt-3">-->
-<!--                <p id="font-register">Belum punya askun?<router-link to="/register">Register</router-link></p>-->
-<!--            </b-col>-->
-<!--        </b-row>-->
 <!--    </b-form>-->
     </b-container>
 </template>
@@ -120,7 +121,8 @@
             onSubmit(e) {
                 e.preventDefault();
                 let currentObj = this;
-                axios.post('http://localhost:8800/auth/signin', {
+                //ganti portnya kalau mau dpake, sesuaikan sama port kalian
+                axios.post('http://localhost:9000/auth/signin', {
                     username : this.username,
                     password : this.password
                 })
@@ -130,11 +132,11 @@
                             console.log("Login Success")
                             // this.$router.go("/")
                             window.location.href = "/"
-                            // this.$router.push('/produk')
+                            // this.$router.push('/')
                         }
                     })
                     .catch(function () {
-
+                        alert("Username atau password salah")
                         currentObj.responses = "Login Failed, Check your username/password";
                     });
             }
