@@ -4,14 +4,10 @@
     <string name="prompt_email">Email</string>
     <string name="prompt_nama">Nama</string>
     <string name="prompt_alamat">Alamat</string>
-    <string name="allowed_input_char_name">0123456789qwertzui opasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
     <string name="prompt_password">Password</string>
-    <string name="prompt_reppass">Ulangi Password</string>
     <string name="daftar"><u>Daftar disini</u></string>
     <string name="Masuk">Masuk</string>
-    <string name="Daftar">Daftar</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
 </resources>

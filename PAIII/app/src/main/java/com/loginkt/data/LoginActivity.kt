@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
 
         val username = findViewById<EditText>(R.id.username)
         val password = findViewById<EditText>(R.id.password)
-        val login = findViewById<Button>(R.id.login)
+        val login = findViewById<Button>(R.id.btnLogin)
         val daftar = findViewById<TextView>(R.id.tvDaftar);
         daftar.setOnClickListener(){
             intent = Intent(this, RegisterForm::class.java)
