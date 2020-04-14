@@ -9,4 +9,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface KecamatanRepo extends JpaRepository<Kecamatan,String>{
     Boolean existsByNama(String kecamatanDefaults);
+    Kecamatan findFirstByNama(String nama);
+    Kecamatan findFirstByNamaCamat(String nama);
 }

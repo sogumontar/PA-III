@@ -25,6 +25,9 @@ public class KecamatanSeeder {
             Kecamatan kecamatan = new Kecamatan();
             kecamatan.setNama(kecamatanDefaults.toString());
             kecamatan.setSkuKecamatan(UUID.randomUUID().toString());
+            kecamatan.setFotoCamat("profile.png");
+            kecamatan.setGambarKecamatan(kecamatanDefaults.toString()+".png");
+            kecamatan.setNamaCamat("Camat " + kecamatanDefaults.toString());
             kecamatanRepo.save(kecamatan);
         }
     }
