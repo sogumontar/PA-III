@@ -1,6 +1,7 @@
 package com.example.PortalDesa.model;
 
 import com.example.PortalDesa.model.constant.TablesConstant;
+import com.example.PortalDesa.model.defaults.RoleName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;

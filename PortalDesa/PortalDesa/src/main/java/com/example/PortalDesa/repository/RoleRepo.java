@@ -1,6 +1,6 @@
 package com.example.PortalDesa.repository;
 
-import com.example.PortalDesa.model.RoleName;
+import com.example.PortalDesa.model.defaults.RoleName;
 import com.example.PortalDesa.model.Roles;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
