@@ -29,7 +29,7 @@ public class Users extends Timestamp {
     public String sku;
 
     @Column(name = "nickname")
-    public String  nickname;
+    public String nickname;
 
     @Column(name = "username")
     public String username;

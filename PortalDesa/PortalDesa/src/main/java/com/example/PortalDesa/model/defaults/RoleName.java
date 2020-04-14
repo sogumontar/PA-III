@@ -1,4 +1,4 @@
-package com.example.PortalDesa.model;
+package com.example.PortalDesa.model.defaults;
 
 /**
  * Created by Sogumontar Hendra Simangunsong on 07/04/2020.

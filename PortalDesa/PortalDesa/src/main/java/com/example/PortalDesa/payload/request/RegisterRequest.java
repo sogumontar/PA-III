@@ -1,6 +1,6 @@
 package com.example.PortalDesa.payload.request;
 
-import com.example.PortalDesa.model.RoleName;
+import com.example.PortalDesa.model.defaults.RoleName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;

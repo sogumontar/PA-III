@@ -2,7 +2,7 @@ package com.example.PortalDesa.service.implement;
 
 import com.example.PortalDesa.exception.AppException;
 import com.example.PortalDesa.exception.AuthException;
-import com.example.PortalDesa.model.RoleName;
+import com.example.PortalDesa.model.defaults.RoleName;
 import com.example.PortalDesa.model.Roles;
 import com.example.PortalDesa.model.SequenceUsers;
 import com.example.PortalDesa.model.Users;
