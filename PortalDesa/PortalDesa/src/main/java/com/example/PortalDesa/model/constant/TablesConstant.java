@@ -9,4 +9,5 @@ public interface TablesConstant {
     public String TABEL_ROLES ="roles";
     public String TABEL_SEQUENCE_USERS ="sequence_users";
     public String TABLE_KECAMATAN = "kecamatan";
+    public String TABLE_DESA = "desa";
 }

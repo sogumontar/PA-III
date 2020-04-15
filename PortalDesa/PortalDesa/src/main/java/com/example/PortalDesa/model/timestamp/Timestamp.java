@@ -9,6 +9,8 @@ import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by Sogumontar Hendra Simangunsong on 07/04/2020.
@@ -21,9 +23,10 @@ import java.time.Instant;
         allowGetters = true
 )
 public abstract class Timestamp implements Serializable {
-
+    Calendar c1 = Calendar.getInstance();
+    Date dateOne = c1.getTime();
     @CreatedDate
-    private Instant created_at;
+    private Instant created_at = dateOne.toInstant();
 
     @LastModifiedDate
     private Instant updated_at;
