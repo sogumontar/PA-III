@@ -3,6 +3,7 @@ package com.example.PortalDesa.model;
 import com.example.PortalDesa.model.constant.FieldForTableDesa;
 import com.example.PortalDesa.model.constant.GlobalFieldConstant;
 import com.example.PortalDesa.model.constant.TablesConstant;
+import com.example.PortalDesa.model.defaults.KecamatanDefaults;
 import com.example.PortalDesa.model.timestamp.Timestamp;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -16,7 +17,6 @@ import javax.persistence.Table;
  * Created by Sogumontar Hendra Simangunsong on 15/04/2020.
  */
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
 @Table(name = TablesConstant.TABLE_DESA)
 public class Desa extends Timestamp {
@@ -32,11 +32,32 @@ public class Desa extends Timestamp {
     @Column(name = FieldForTableDesa.FIELD_JUMLAH_PENDUDUK)
     public int jumlahPenduduk;
 
+    @Column(name = FieldForTableDesa.FIELD_NAMA_KECAMATAN)
+    public KecamatanDefaults kecamatan;
+
     @Column(name = GlobalFieldConstant.FIELD_GAMBAR)
     public String gambar;
 
     @Column(name = FieldForTableDesa.FIELD_STATUS)
     public int status;
+
+    public Desa(String sku, String nama, String namaKepalaDesa, int jumlahPenduduk, KecamatanDefaults kecamatan, String gambar, int status) {
+        this.sku = sku;
+        this.nama = nama;
+        this.namaKepalaDesa = namaKepalaDesa;
+        this.jumlahPenduduk = jumlahPenduduk;
+        this.kecamatan = kecamatan;
+        this.gambar = gambar;
+        this.status = status;
+    }
+
+    public KecamatanDefaults getKecamatan() {
+        return kecamatan;
+    }
+
+    public void setKecamatan(KecamatanDefaults kecamatan) {
+        this.kecamatan = kecamatan;
+    }
 
     public String getSku() {
         return sku;

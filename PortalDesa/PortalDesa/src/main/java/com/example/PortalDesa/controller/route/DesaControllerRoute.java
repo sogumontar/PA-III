@@ -7,4 +7,5 @@ public interface DesaControllerRoute {
     public String ROUTE_DESA_ = "/desa";
     public String ROUTE_DESA_ALL = "/";
     public String ROUTE_DESA_FIND_BY_NAMA = "/{nama}";
+    public String ROUTE_ADD_DESA = "/add";
 }
