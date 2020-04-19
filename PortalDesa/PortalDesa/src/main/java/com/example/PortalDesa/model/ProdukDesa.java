@@ -28,15 +28,27 @@ public class ProdukDesa {
     @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_DESKRIPSI)
     String deskripsi;
 
-    @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_STATUS)
-    Boolean status;
+    @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_NAMA_DESA)
+    String namaDesa;
 
-    public ProdukDesa(String sku, String nama, Integer harga, String deskripsi, Boolean status) {
+    @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_STATUS)
+    Integer status;
+
+    public ProdukDesa(String sku, String nama, Integer harga, String deskripsi, String namaDesa, Integer status) {
         this.sku = sku;
         this.nama = nama;
         this.harga = harga;
         this.deskripsi = deskripsi;
+        this.namaDesa = namaDesa;
         this.status = status;
+    }
+
+    public String getNamaDesa() {
+        return namaDesa;
+    }
+
+    public void setNamaDesa(String namaDesa) {
+        this.namaDesa = namaDesa;
     }
 
     public String getSku() {
@@ -71,11 +83,11 @@ public class ProdukDesa {
         this.deskripsi = deskripsi;
     }
 
-    public Boolean getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(Boolean status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 }

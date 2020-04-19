@@ -40,35 +40,55 @@
   <component name="ChangeListManager">
     <list default="true" id="cb1cd72d-22e7-4066-aa5f-c0bb735bc78b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/DesaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/DesaController.java" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/KecamatanController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/KecamatanControllerRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/KecamatanControllerRoute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Desa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Desa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Kecamatan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/SequenceUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/sequence/SequenceUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/constant/FieldForTableKecamatan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/constant/FieldForTableKecamatan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/constant/TablesConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/constant/TablesConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/KecamatanRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/SequenceUsersRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/SequenceUsersRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/seeder/KecamatanSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/seeder/KecamatanSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/AuthenticationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/DesaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/DesaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/DesaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/DesaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/KecamatanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/KecamatanController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/KecamatanControllerRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/KecamatanControllerRoute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Desa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Desa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Kecamatan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Kecamatan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/constant/FieldForTableKecamatan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/constant/FieldForTableKecamatan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/constant/TablesConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/constant/TablesConstant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/KecamatanRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/KecamatanRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/KecamatanSeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/KecamatanSeeder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/DesaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/DesaServiceImpl.class" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/PortalDesaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/PortalDesaApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
->>>>>>> ebed47cf47338c55c03a3dba61882db4aa3e7898
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/ProdukDesaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/ProdukDesaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/ProdukDesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/ProdukDesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/constant/FieldForProdukDesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/constant/FieldForProdukDesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/ProdukDesaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/ProdukDesaRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/ProdukDesaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/ProdukDesaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/ProdukDesaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/ProdukDesaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AppException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AppException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AuthException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AuthException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/ProdukDesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/ProdukDesa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Roles$RolesBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Roles$RolesBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Roles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Roles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/constant/FieldForProdukDesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/constant/FieldForProdukDesa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/KecamatanDefaults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/KecamatanDefaults.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/RoleName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/RoleName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/timestamp/Timestamp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/timestamp/Timestamp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/ApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/ApiResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/AuthenticationResponse$AuthenticationResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/AuthenticationResponse$AuthenticationResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/AuthenticationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/AuthenticationResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/CreateResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/CreateResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/JwtLoginResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/JwtLoginResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/DesaRequest$DesaRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/DesaRequest$DesaRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/DesaRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/DesaRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/LoginRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/RegisterRequest$RegisterRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/RegisterRequest$RegisterRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/RegisterRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/RegisterRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/DesaRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/DesaRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/ProdukDesaRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/ProdukDesaRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/RoleRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/RoleRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/UsersRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/UsersRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtAuthenticationEntryPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtTokenProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/UserPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/UserPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/RoleSeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/RoleSeeder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/AuthenticationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/DesaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/DesaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/ProdukDesaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/ProdukDesaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/UsersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/UsersServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +131,18 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.PortalDesaApplication">
     <configuration name="KecamatanSeeder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -155,16 +187,13 @@
       <workItem from="1586849462584" duration="3223000" />
       <workItem from="1586916506809" duration="1857000" />
       <workItem from="1586919514791" duration="3906000" />
-<<<<<<< HEAD
       <workItem from="1587011274053" duration="4334000" />
       <workItem from="1587274040418" duration="2258000" />
       <workItem from="1587276346208" duration="2717000" />
       <workItem from="1587285318881" duration="4948000" />
-=======
       <workItem from="1587011274053" duration="2640000" />
       <workItem from="1587216507369" duration="3595000" />
       <workItem from="1587224231708" duration="912000" />
->>>>>>> ebed47cf47338c55c03a3dba61882db4aa3e7898
     </task>
     <servers />
   </component>
@@ -176,12 +205,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1587216875098">

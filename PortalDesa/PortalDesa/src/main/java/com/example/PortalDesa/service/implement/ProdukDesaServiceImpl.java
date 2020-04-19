@@ -9,6 +9,9 @@ import com.example.PortalDesa.service.ProdukDesaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+import java.util.List;
+
 /**
  * Created by Sogumontar Hendra Simangunsong on 19/04/2020.
  */
@@ -43,14 +46,55 @@ public class ProdukDesaServiceImpl implements ProdukDesaService {
     }
 
     @Override
-    public ProdukDesa save(ProdukDesaRequest request) {
-        ProdukDesa produkDesa=new ProdukDesa(
-                skuGenerator(request.getNama(),request.getDesa()),
+    public void save(ProdukDesaRequest request) {
+        ProdukDesa produkDesa = new ProdukDesa(
+                skuGenerator(request.getNama(), request.getDesa()),
                 request.getNama(),
                 request.getHarga(),
                 request.getDeskripsi(),
-                Boolean.TRUE
+                request.getDesa(),
+                1
         );
-        return produkDesaRepo.save(produkDesa);
+        produkDesaRepo.save(produkDesa);
+    }
+
+    @Override
+    public List<ProdukDesa> findAll() {
+        return produkDesaRepo.findAll();
+    }
+
+    @Override
+    public ProdukDesa findBySku(String sku) {
+        return produkDesaRepo.findFirstBySku(sku);
+    }
+
+    @Override
+    @Transactional
+    public void updateProduk(String sku, ProdukDesaRequest request) {
+        produkDesaRepo.updateBySku(sku, request.getNama(), request.getHarga(), request.getDeskripsi(), request.getDesa());
+    }
+
+    @Override
+    @Transactional
+    public void suspendProduk(String sku) {
+        System.out.println(sku);
+        produkDesaRepo.suspendProduk(sku);
+    }
+
+    @Override
+    @Transactional
+    public void deleteProduk(String sku) {
+        produkDesaRepo.deleteBySku(sku);
+    }
+
+    @Override
+    @Transactional
+    public void activate(String sku) {
+        produkDesaRepo.activate(sku);
+    }
+
+    @Override
+    public List<ProdukDesa> findAllSuspend() {
+        return produkDesaRepo.findAllByStatus(2);
     }
 }

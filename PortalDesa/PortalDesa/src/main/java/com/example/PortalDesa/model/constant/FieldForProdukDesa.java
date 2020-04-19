@@ -8,5 +8,6 @@ public interface FieldForProdukDesa {
     public String FIELD_PRODUK_DESA_HARGA = "harga";
     public String FIELD_PRODUK_DESA_DESKRIPSI = "deskripsi";
     public String FIELD_PRODUK_DESA_STATUS = "status";
+    public String FIELD_PRODUK_DESA_NAMA_DESA = "nama_desa";
 
 }
