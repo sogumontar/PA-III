@@ -82,7 +82,7 @@
             android:background="@drawable/rounded_btn"
             android:elevation="6dp"
             android:translationZ="6dp"
-            android:text="@string/daftar"
+            android:text="@string/Masuk"
             android:textColor="#ffff"/>
 
         <FrameLayout
