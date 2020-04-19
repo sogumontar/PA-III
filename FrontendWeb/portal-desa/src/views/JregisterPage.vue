@@ -8,9 +8,8 @@
         </b-row>
 
         <b-form @submit="formSubmit" class="mt-3">
-
             <b-form-row class="justify-content-sm-center">
-                <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                <b-col cols="3" col md="2" sm="2" lg="1" class="mt-2">
                     <p>Nama</p>
                 </b-col>
                 <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
@@ -27,7 +26,7 @@
             </b-form-row>
 
             <b-form-row class="justify-content-sm-center mt-3">
-                <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                <b-col cols="3" col md="2" sm="2" lg="1" class="mt-2">
                     <p>Alamat</p>
                 </b-col>
                 <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
@@ -44,7 +43,7 @@
             </b-form-row>
 
             <b-form-row class="justify-content-sm-center mt-3">
-                <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                <b-col cols="3" col md="2" sm="2" lg="1" class="mt-2">
                     <p>Username</p>
                 </b-col>
                 <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
@@ -61,7 +60,7 @@
             </b-form-row>
 
             <b-form-row class="justify-content-sm-center mt-3">
-                <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                <b-col cols="3" col md="2" sm="2" lg="1" class="mt-2">
                     <p>Email</p>
                 </b-col>
                 <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
@@ -78,7 +77,7 @@
             </b-form-row>
 
             <b-form-row class="justify-content-sm-center mt-3">
-                <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                <b-col cols="3" col md="2" sm="2" lg="1" class="mt-2">
                     <p>Password</p>
                 </b-col>
                 <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
@@ -96,7 +95,7 @@
             </b-form-row>
 
             <b-form-row class="justify-content-sm-center mt-3">
-                <b-col cols="auto" col md="auto" lg="1" class="mt-2">
+                <b-col cols="3" col md="2" sm="2" lg="1" class="mt-2">
                     <p>Ulang Password</p>
                 </b-col>
                 <b-col cols="auto" col md="auto" lg="auto" sm="auto" class="mt-2">
@@ -112,6 +111,7 @@
                     ></b-form-input>
                 </b-col>
             </b-form-row>
+
             <b-form-row class="justify-content-md-center">
                 <b-col col md="4" lg="2">
 
@@ -125,10 +125,10 @@
             </b-form-row>
         </b-form>
 
-        <strong>Output:</strong>
-        <pre>
-            {{output}}
-        </pre>
+<!--        <strong>Output:</strong>-->
+<!--        <pre>-->
+<!--            {{output}}-->
+<!--        </pre>-->
 
     </b-container>
 </template>
@@ -154,25 +154,29 @@
             formSubmit(e) {
                 e.preventDefault();
                 let currentObj = this;
-                axios.post('http://localhost:9000/auth/signup', {
-                    name : this.name,
-                    username : this.username,
-                    email : this.email,
-                    alamat : this.alamat,
-                    password : this.password,
-                    confirmPassword : this.confirmPassword,
-                    role : "ROLE_USER"
-                })
-                    .then(function (response) {
-                        currentObj.output = response.data;
-                        if(response.data.accessToken){
-                            console.log("Register Success")
-                        }
-                        this.$router.push({name: 'Login'})
+                if(this.password !== this.confirmPassword){
+                    alert("Password harus sama")
+                } else {
+                    axios.post('http://localhost:9000/auth/signup', {
+                        name : this.name,
+                        username : this.username,
+                        email : this.email,
+                        alamat : this.alamat,
+                        password : this.password,
+                        confirmPassword : this.confirmPassword,
+                        role : "ROLE_USER"
                     })
-                    .catch(function (err) {
-                        currentObj.output = err;
-                    });
+                        .then(function (response) {
+                            currentObj.output = response.data;
+                            if(response.data.accessToken){
+                                console.log("Register Success")
+                            }
+                            this.$router.replace({name: 'Login'})
+                        })
+                        .catch(function (err) {
+                            currentObj.output = err;
+                        });
+                }
             }
         }
     }
@@ -194,7 +198,7 @@
 
     @media only screen and (max-width: 600px) {
         #tombol-daftar{
-            margin-left: 2px;
+            margin-left: 27px;
         }
         #font-register{
             font-size: 0.9em;
@@ -216,7 +220,7 @@
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
         #tombol-daftar{
-            margin-left: 50px;
+            margin-left: 97px;
         }
         #font-register{
             font-size: 0.9em;
