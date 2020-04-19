@@ -4,7 +4,7 @@ import com.example.PortalDesa.exception.AppException;
 import com.example.PortalDesa.exception.AuthException;
 import com.example.PortalDesa.model.defaults.RoleName;
 import com.example.PortalDesa.model.Roles;
-import com.example.PortalDesa.model.SequenceUsers;
+import com.example.PortalDesa.model.sequence.SequenceUsers;
 import com.example.PortalDesa.model.Users;
 import com.example.PortalDesa.payload.ApiResponse;
 import com.example.PortalDesa.payload.AuthenticationResponse;
@@ -65,7 +65,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     @Override
     public ResponseEntity<?> register(@RequestBody RegisterRequest registerRequest){
 
-
         if(!checkPassword(registerRequest.getPassword(),registerRequest.getConfirmPassword())){
             return ResponseEntity.badRequest().body("Check your password again");
         }
@@ -73,7 +72,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         checkEmail(registerRequest.getEmail());
         checkUsername(registerRequest.getUsername());
 
-        System.out.println("testing");
         Roles roles =checkRole(registerRequest.getRole().toString());
         String skuFix=skuGenerator(registerRequest.getUsername(),roles.toString());
         Users users=new Users(

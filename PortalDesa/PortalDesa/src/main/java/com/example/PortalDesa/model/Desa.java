@@ -19,7 +19,7 @@ import javax.persistence.Table;
 @Entity
 @NoArgsConstructor
 @Table(name = TablesConstant.TABLE_DESA)
-public class Desa extends Timestamp {
+public class Desa  {
     @Id
     public String sku;
 
