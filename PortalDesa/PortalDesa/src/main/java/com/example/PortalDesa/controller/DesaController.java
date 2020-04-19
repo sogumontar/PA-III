@@ -40,5 +40,5 @@ public class DesaController {
     public ResponseEntity<?> addDesa(@RequestBody DesaRequest desaRequest) {
         return desaService.addDesa(desaRequest);
     }
-    
+
 }
