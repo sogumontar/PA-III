@@ -1,6 +1,6 @@
 package com.example.PortalDesa.repository;
 
-import com.example.PortalDesa.model.SequenceUsers;
+import com.example.PortalDesa.model.sequence.SequenceUsers;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

@@ -23,8 +23,8 @@ public class KecamatanSeeder {
     public void checkIfExist(KecamatanDefaults kecamatanDefaults) {
         if (!kecamatanRepo.existsByNama(kecamatanDefaults.toString())) {
             Kecamatan kecamatan = new Kecamatan();
+            kecamatan.setSku(UUID.randomUUID().toString());
             kecamatan.setNama(kecamatanDefaults.toString());
-            kecamatan.setSkuKecamatan(UUID.randomUUID().toString());
             kecamatan.setFotoCamat("profile.png");
             kecamatan.setGambarKecamatan(kecamatanDefaults.toString()+".png");
             kecamatan.setNamaCamat("Camat " + kecamatanDefaults.toString());

@@ -1,4 +1,4 @@
-package com.example.PortalDesa.model;
+package com.example.PortalDesa.model.sequence;
 
 import com.example.PortalDesa.model.constant.SequenceConstantField;
 import com.example.PortalDesa.model.constant.TablesConstant;
@@ -10,12 +10,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Created by Sogumontar Hendra Simangunsong on 07/04/2020.
+ * Created by Sogumontar Hendra Simangunsong on 19/04/2020.
  */
 @Entity
 @NoArgsConstructor
-@Table(name = TablesConstant.TABEL_SEQUENCE_USERS)
-public class SequenceUsers {
+@Table(name = TablesConstant.TABEL_SEQUENCE_PRODUK)
+public class SequenceProduk {
     @Id
     @Column(name = SequenceConstantField.SEQUENCE_KEY)
     private String key;
@@ -23,7 +23,7 @@ public class SequenceUsers {
     @Column(name = SequenceConstantField.SEQUENCE_LAST_SEQUENCE)
     private String last_seq;
 
-    public SequenceUsers(String key, String last_seq) {
+    public SequenceProduk(String key, String last_seq) {
         this.key = key;
         this.last_seq = last_seq;
     }

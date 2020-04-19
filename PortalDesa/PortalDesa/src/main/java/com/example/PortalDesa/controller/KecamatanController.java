@@ -2,9 +2,8 @@ package com.example.PortalDesa.controller;
 
 import com.example.PortalDesa.controller.route.KecamatanControllerRoute;
 import com.example.PortalDesa.model.Kecamatan;
-import com.example.PortalDesa.model.Users;
 import com.example.PortalDesa.repository.KecamatanRepo;
-import com.example.PortalDesa.repository.UsersRepo;
+import com.example.PortalDesa.service.implement.KecamatanServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -15,37 +14,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 /**
- * Created by Sogumontar Hendra Simangunsong on 14/04/2020.
+ * Created by Sogumontar Hendra Simangunsong on 19/04/2020.
  */
 @Controller
-@RequestMapping(KecamatanControllerRoute.ROUTE_KECAMATAN)
+@RequestMapping("/test")
 public class KecamatanController {
-
     @Autowired
-    KecamatanRepo kecamatanRepo;
+    KecamatanServiceImpl kecamatanService;
 
-    @GetMapping(KecamatanControllerRoute.ROUTE_KECAMATAN_ALL_)
-    public ResponseEntity<?> findAll() {
-        return ResponseEntity.ok(kecamatanRepo.findAll());
+    @GetMapping(KecamatanControllerRoute.ROUTE_KECAMATAN)
+    public ResponseEntity<?> findAll(){
+        System.out.println(KecamatanControllerRoute.ROUTE_KECAMATAN_ALL);
+        return ResponseEntity.ok(kecamatanService.findAll());
     }
 
-    @GetMapping("/{nama}")
-    public Kecamatan findByName(@PathVariable String nama) {
-        if (kecamatanRepo.existsByNama(nama)) {
-            System.out.println(kecamatanRepo.findFirstByNama(nama));
-            System.out.println("ada boy");
-        }
-        return kecamatanRepo.findFirstByNama(nama);
+    @GetMapping(KecamatanControllerRoute.ROUTE_KECAMATAN_GET_BY_NAME)
+    public ResponseEntity<?> findByName(@PathVariable String name){
+        return ResponseEntity.ok(kecamatanService.findFirstByNama(name));
     }
 
-    @GetMapping("/nama/{namaCamat}")
-    public List findbyNamaCamat(@PathVariable String namaCamat) {
-        return kecamatanRepo.findFirstByNamaCamat(namaCamat);
-    }
-
-    @GetMapping("/sku{sku_kecamatan}")
-    public ResponseEntity<?> findBySku(@PathVariable String sku_kecamatan) {
-        System.out.println("asd");
-        return ResponseEntity.ok(kecamatanRepo.findBySkuKecamatan(sku_kecamatan));
-    }
 }

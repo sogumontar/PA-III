@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  * Created by Sogumontar Hendra Simangunsong on 15/04/2020.
@@ -23,8 +24,9 @@ public class DesaServiceImpl implements DesaService {
 
     @Override
     public ResponseEntity<?> addDesa(DesaRequest desaRequest) {
+
         Desa desa = new Desa(
-                "sku",
+                UUID.randomUUID().toString(),
                 desaRequest.getNama(),
                 desaRequest.getNamaKepalaDesa(),
                 desaRequest.getJumlahPenduduk(),
@@ -32,8 +34,9 @@ public class DesaServiceImpl implements DesaService {
                 desaRequest.getGambar(),
                 1
         );
+
         System.out.println("Kecamatan = " + desa.getKecamatan().toString());
         desaRepo.save(desa);
-        return ResponseEntity.ok(new CreateResponse(201, "Add Desa Success ", (List) desa));
+        return ResponseEntity.ok(desa);
     }
 }
