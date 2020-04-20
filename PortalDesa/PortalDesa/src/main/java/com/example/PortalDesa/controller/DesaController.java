@@ -32,6 +32,7 @@ public class DesaController {
 
     @GetMapping(DesaControllerRoute.ROUTE_DESA_FIND_BY_NAMA)
     public Desa findByNama(@PathVariable String nama) {
+        System.out.println(desaRepo.findByNama(nama));
         return desaRepo.findByNama(nama);
     }
 
