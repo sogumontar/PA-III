@@ -14,6 +14,7 @@ import java.util.List;
 /**
  * Created by Sogumontar Hendra Simangunsong on 19/04/2020.
  */
+@CrossOrigin
 @Controller
 @RequestMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA)
 public class ProdukDesaController {
@@ -54,6 +55,7 @@ public class ProdukDesaController {
         return ResponseEntity.ok("Delete Produk Success");
     }
 
+    @CrossOrigin
     @GetMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_ALL_SUSPEND)
     public ResponseEntity<?> findAllSuspend(){
         System.out.println("masuk");

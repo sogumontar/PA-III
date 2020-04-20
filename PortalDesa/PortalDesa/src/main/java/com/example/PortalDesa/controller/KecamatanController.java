@@ -7,6 +7,7 @@ import com.example.PortalDesa.service.implement.KecamatanServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,15 +17,16 @@ import java.util.List;
 /**
  * Created by Sogumontar Hendra Simangunsong on 19/04/2020.
  */
+@CrossOrigin
 @Controller
-@RequestMapping("/test")
+@RequestMapping(KecamatanControllerRoute.ROUTE_KECAMATAN)
 public class KecamatanController {
     @Autowired
     KecamatanServiceImpl kecamatanService;
 
-    @GetMapping(KecamatanControllerRoute.ROUTE_KECAMATAN)
+    @GetMapping(KecamatanControllerRoute.ROUTE_KECAMATAN_ALL)
     public ResponseEntity<?> findAll(){
-        System.out.println(KecamatanControllerRoute.ROUTE_KECAMATAN_ALL);
+        System.out.println(kecamatanService.findAll());
         return ResponseEntity.ok(kecamatanService.findAll());
     }
 

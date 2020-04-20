@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by Sogumontar Hendra Simangunsong on 19/04/2020.
  */
@@ -16,8 +18,8 @@ public class KecamatanServiceImpl implements KecamatanService {
     KecamatanRepo kecamatanRepo;
 
     @Override
-    public ResponseEntity<?> findAll() {
-        return null;
+    public List findAll() {
+        return kecamatanRepo.findAll();
     }
 
     @Override
