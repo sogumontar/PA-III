@@ -51,6 +51,7 @@ public class ProdukDesaServiceImpl implements ProdukDesaService {
                 skuGenerator(request.getNama(), request.getDesa()),
                 request.getNama(),
                 request.getHarga(),
+                request.getGambar(),
                 request.getDeskripsi(),
                 request.getDesa(),
                 1
@@ -72,6 +73,12 @@ public class ProdukDesaServiceImpl implements ProdukDesaService {
     @Transactional
     public void updateProduk(String sku, ProdukDesaRequest request) {
         produkDesaRepo.updateBySku(sku, request.getNama(), request.getHarga(), request.getDeskripsi(), request.getDesa());
+    }
+
+    @Override
+    @Transactional
+    public void updateProdukWithGambar(String sku, ProdukDesaRequest request) {
+        produkDesaRepo.updateBySkuWithGambar(sku, request.getNama(), request.getHarga(), request.getDeskripsi(), request.getDesa(), request.getGambar());
     }
 
     @Override

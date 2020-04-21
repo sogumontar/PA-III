@@ -25,6 +25,9 @@ public class ProdukDesa {
     @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_HARGA)
     Integer harga;
 
+    @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_GAMBAR)
+    String gambar;
+
     @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_DESKRIPSI)
     String deskripsi;
 
@@ -34,13 +37,22 @@ public class ProdukDesa {
     @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_STATUS)
     Integer status;
 
-    public ProdukDesa(String sku, String nama, Integer harga, String deskripsi, String namaDesa, Integer status) {
+    public ProdukDesa(String sku, String nama, Integer harga, String gambar, String deskripsi, String namaDesa, Integer status) {
         this.sku = sku;
         this.nama = nama;
         this.harga = harga;
+        this.gambar = gambar;
         this.deskripsi = deskripsi;
         this.namaDesa = namaDesa;
         this.status = status;
+    }
+
+    public String getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
     }
 
     public String getNamaDesa() {

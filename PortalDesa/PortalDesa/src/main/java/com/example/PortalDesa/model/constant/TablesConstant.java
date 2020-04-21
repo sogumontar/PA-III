@@ -10,6 +10,7 @@ public interface TablesConstant {
     public String TABLE_KECAMATAN = "kecamatan";
     public String TABLE_DESA = "desa";
     public String TABLE_PRODUK_DESA = "produk_desa";
+    public String TABLE_PENGINAPAN = "penginapan";
 
     //for sequence
     public String TABEL_SEQUENCE_USERS ="sequence_users";
