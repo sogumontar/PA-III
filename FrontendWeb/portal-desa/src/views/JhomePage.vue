@@ -9,16 +9,32 @@
         </b-row>
         <hr>
         <b-row class="">
-            <li v-for="kecamatan in kecamatan" :key="kecamatan.sku">
-                {{kecamatan.nama}}
-                <b-col cols="12" col lg="4" sm="12" md="6" class="p-4">
+<!--            <li >-->
+<!--                {{kecamatan.nama}}-->
+                <b-col cols="12" col lg="4" sm="12" md="6" class="p-4" v-for="kecamatan in kecamatan.slice(batasbawah, batasatas)" :key="kecamatan.sku">
                     <h5>{{kecamatan.nama}}</h5>
                     <b-img rounded=""
                            src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Kecamatan_Balige%2C_Toba_Samosir_02.jpg"
                            fluid></b-img>
                 </b-col>
-            </li>
+<!--            </li>-->
         </b-row>
+        <div>
+            <b-pagination
+                    v-model="currentPage"
+                    :total-rows="rows"
+                    :per-page="perPage"
+                    @change="tambah"
+                    align="center"
+            ></b-pagination>
+        </div>
+
+<!--        current page : {{ this.currentPage }}-->
+<!--        last page : {{ this.lastpage }}-->
+<!--        batas bawah : {{ this.batasbawah }}-->
+<!--        batas atas : {{ this.batasatas }}-->
+<!--        pengurangan : {{ currentPage - lastpage }}-->
+<!--        Tes : {{ tes }}-->
         <hr>
         <p id="judul-desa-populer" class="p-2">Desa Populer</p>
         <b-row class="p-2 pb-4">
@@ -81,6 +97,12 @@
         },
         data() {
             return {
+                perPage: 6,
+                currentPage: 1,
+                batasbawah: 0,
+                batasatas: 6,
+                lastpage: 1,
+                tes: "",
                 kecamatan: []
             }
         },
@@ -91,7 +113,17 @@
             async load() {
                 const response = await axios.get('http://localhost:9000/kecamatan/')
                 this.kecamatan = response.data
+            },
+            tambah (){
+                //Lagi di coba
+
             }
+        },
+        computed: {
+            rows() {
+                return this.kecamatan.length
+            }
+
         }
     }
 
