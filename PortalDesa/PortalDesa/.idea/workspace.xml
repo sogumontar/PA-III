@@ -39,6 +39,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb1cd72d-22e7-4066-aa5f-c0bb735bc78b" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../../FrontendWeb/portal-desa/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontendWeb/portal-desa/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PortalDesa.iml" beforeDir="false" />
@@ -150,12 +151,30 @@
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Kecamatan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Kecamatan.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/ProdukDesaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/ProdukDesaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/ProdukDesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/ProdukDesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/constant/FieldForProdukDesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/constant/FieldForProdukDesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/constant/TablesConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/constant/TablesConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/payload/request/ProdukDesaRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/payload/request/ProdukDesaRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/ProdukDesaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/ProdukDesaRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/ProdukDesaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/ProdukDesaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/demo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/PortalDesaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/PortalDesaApplication.class" afterDir="false" />
+>>>>>>> d7f84afeb395a69939a8af61b3fc9ee10f234e69
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/WebMvcConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/AuthenticationController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/DesaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/DesaController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/KecamatanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/KecamatanController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/ProdukDesaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/ProdukDesaController.class" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.class" afterDir="false" />
+>>>>>>> d7f84afeb395a69939a8af61b3fc9ee10f234e69
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AppException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AppException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AuthException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AuthException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Desa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Desa.class" afterDir="false" />
@@ -165,6 +184,11 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Roles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Roles.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/UserRole.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Users.class" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/constant/FieldForProdukDesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/constant/FieldForProdukDesa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/constant/TablesConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/constant/TablesConstant.class" afterDir="false" />
+>>>>>>> d7f84afeb395a69939a8af61b3fc9ee10f234e69
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/KecamatanDefaults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/KecamatanDefaults.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/RoleName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/RoleName.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/sequence/SequenceProduk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/sequence/SequenceProduk.class" afterDir="false" />
@@ -205,8 +229,12 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/KecamatanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/KecamatanServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/UsersServiceImpl.class" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/demo.kotlin_module" beforeDir="false" />
+>>>>>>> d7f84afeb395a69939a8af61b3fc9ee10f234e69
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,9 +332,13 @@
       <workItem from="1587344916784" duration="1224000" />
       <workItem from="1587313951576" duration="495000" />
       <workItem from="1587314542144" duration="263000" />
+<<<<<<< HEAD
       <workItem from="1587369722019" duration="927000" />
       <workItem from="1587389874858" duration="11000" />
       <workItem from="1587390943971" duration="4340000" />
+=======
+      <workItem from="1587435201858" duration="8810000" />
+>>>>>>> d7f84afeb395a69939a8af61b3fc9ee10f234e69
     </task>
     <servers />
   </component>

@@ -22,6 +22,8 @@ public interface ProdukDesaService {
 
     public void updateProduk(String sku, ProdukDesaRequest request);
 
+    public void updateProdukWithGambar(String sku, ProdukDesaRequest request);
+
     public void suspendProduk(String sku);
 
     public void deleteProduk(String sku);

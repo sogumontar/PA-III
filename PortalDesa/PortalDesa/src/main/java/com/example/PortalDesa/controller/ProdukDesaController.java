@@ -22,47 +22,54 @@ public class ProdukDesaController {
     ProdukDesaServiceImpl produkDesaService;
 
     @GetMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_ALL)
-    public ResponseEntity<?> findAll(){
+    public ResponseEntity<?> findAll() {
         return ResponseEntity.ok(produkDesaService.findAll());
     }
 
     @GetMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_FIND_BY_SKU)
-    public ResponseEntity<?> findBySku(@PathVariable String sku){
+    public ResponseEntity<?> findBySku(@PathVariable String sku) {
         return ResponseEntity.ok(produkDesaService.findBySku(sku));
     }
 
     @PostMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_ADD)
-    public ResponseEntity<?> addProdukDesa(@RequestBody ProdukDesaRequest request){
+    public ResponseEntity<?> addProdukDesa(@RequestBody ProdukDesaRequest request) {
         produkDesaService.save(request);
         return ResponseEntity.ok("Add Produk Success");
     }
 
     @PutMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_UPDATE)
-    public ResponseEntity<?> updateProdukDesa(@RequestBody ProdukDesaRequest request, @PathVariable String sku){
-        produkDesaService.updateProduk(sku,request);
+    public ResponseEntity<?> updateProdukDesa(@RequestBody ProdukDesaRequest request, @PathVariable String sku) {
+        produkDesaService.updateProduk(sku, request);
+        return ResponseEntity.ok("Update Produk Success");
+    }
+
+    @PutMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_UPDATE_WITH_GAMBAR)
+    public ResponseEntity<?> updateProdukDesaWithGambar(@RequestBody ProdukDesaRequest request, @PathVariable String sku) {
+        produkDesaService.updateProduk(sku, request);
         return ResponseEntity.ok("Update Produk Success");
     }
 
     @PutMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_SUSPEND)
-    public ResponseEntity<?> suspendProduk(@PathVariable String sku){
+    public ResponseEntity<?> suspendProduk(@PathVariable String sku) {
         produkDesaService.suspendProduk(sku);
         return ResponseEntity.ok("Suspend Produk Success");
     }
 
     @PutMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_DELETE)
-    public ResponseEntity<?> deleteProduk(@PathVariable String sku){
+    public ResponseEntity<?> deleteProduk(@PathVariable String sku) {
         produkDesaService.deleteProduk(sku);
         return ResponseEntity.ok("Delete Produk Success");
     }
 
     @CrossOrigin
     @GetMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_ALL_SUSPEND)
-    public ResponseEntity<?> findAllSuspend(){
+    public ResponseEntity<?> findAllSuspend() {
         System.out.println("masuk");
         return ResponseEntity.ok(produkDesaService.findAllSuspend());
     }
+
     @PutMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_ACTIVATE_BY_SKU)
-    public ResponseEntity<?> activate(@PathVariable String sku){
+    public ResponseEntity<?> activate(@PathVariable String sku) {
         produkDesaService.activate(sku);
         return ResponseEntity.ok("Activate Success");
     }
