@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.UUID;
 
 /**
  * Created by Sogumontar Hendra Simangunsong on 19/04/2020.
@@ -18,7 +19,7 @@ import javax.persistence.Table;
 public class Kecamatan {
 
     @Id
-    String sku;
+    String sku = UUID.randomUUID().toString();
 
     @Column(name = FieldForTableKecamatan.FIELD_FOTO_CAMAT)
     String fotoCamat;
