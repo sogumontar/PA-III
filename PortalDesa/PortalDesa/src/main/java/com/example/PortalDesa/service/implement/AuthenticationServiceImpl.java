@@ -97,6 +97,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     @Override
     public ResponseEntity<?> login(@Valid @RequestBody LoginRequest loginRequest){
         System.out.println("username :" + loginRequest.getUsername());
+        System.out.println("password :" + loginRequest.getPassword());
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         loginRequest.getUsername(),
@@ -105,7 +106,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         );
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        System.out.println("testing");
         Users user = usersService.findByUsername(loginRequest.getUsername());
         UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
 //        String role=userPrincipal.getAuthorities().toString();
@@ -132,7 +132,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     @Override
     public Roles checkRole(String role){
 
-        System.out.println("testing2");
         Roles roles;
         RoleName roleName=RoleName.ROLE_USER;
         if(role.equals(RoleName.ROLE_ADMIN)){
