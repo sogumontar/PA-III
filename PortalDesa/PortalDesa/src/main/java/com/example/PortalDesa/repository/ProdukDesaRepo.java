@@ -28,6 +28,11 @@ public interface ProdukDesaRepo extends JpaRepository<ProdukDesa, String> {
 
     @Modifying
     @Transactional
+    @Query("UPDATE ProdukDesa p  SET p.nama=?2, p.harga=?3, p.deskripsi=?4, p.namaDesa=?5, p.gambar=?6 WHERE p.sku LIKE ?1")
+    public void updateBySkuWithGambar(String sku, String nama, Integer harga, String deskripsi, String desa, String gambar);
+
+    @Modifying
+    @Transactional
     @Query("UPDATE ProdukDesa p  SET p.status=2 WHERE p.sku LIKE ?1")
     public void suspendProduk(String sku);
 

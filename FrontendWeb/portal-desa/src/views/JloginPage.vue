@@ -95,7 +95,7 @@
 
                 </b-col>
                 <b-col cols="auto" col md="auto" lg="auto" class="mt-3">
-                    <p id="font-register">Belum punya askun?<router-link to="/register">Register</router-link></p>
+                    <p id="font-register">Belum punya akun?<router-link to="/register">Register</router-link></p>
                 </b-col>
             </b-row>
         </b-form>
@@ -131,12 +131,15 @@
                         if(response.data.accessToken){
                             console.log("Login Success")
                             // this.$router.go("/")
-                            window.location.href = "/"
-                            // this.$router.push('/')
+                            // window.location.href = "/"
+                            this.$emit("authenticated", true);
+                            // this.$parent.$router.replace({name: "Home"})
+                            // this.$router.replace()
                         }
                     })
-                    .catch(function () {
-                        alert("Username atau password salah")
+                    .catch(function (response) {
+                        // alert("Username atau password salah")
+                        alert(response.data)
                         currentObj.responses = "Login Failed, Check your username/password";
                     });
             }
@@ -167,7 +170,7 @@
         }
         #font-register{
             font-size: 0.9em;
-            margin-left: 0px;
+            margin-left: 126px;
         }
     }
 

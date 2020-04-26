@@ -21,10 +21,10 @@
             <p class="h2"><b-icon-people-circle></b-icon-people-circle></p>
 <!--            <img alt="Vue logo" src="./assets/pict/profile.png" width="45px" height="45px" >-->
             <b-nav-item-dropdown  right class="">
-              <b-dropdown-item><router-link to="/">Profile</router-link></b-dropdown-item>
-              <b-dropdown-item><router-link to="/">Keranjang</router-link></b-dropdown-item>
-              <b-dropdown-item><router-link to="/">Pesanan</router-link></b-dropdown-item>
-              <b-dropdown-item><router-link to="/login">Login</router-link></b-dropdown-item>
+              <b-dropdown-item v-if="authenticated"><router-link to="/">Profile</router-link></b-dropdown-item>
+              <b-dropdown-item v-if="authenticated"><router-link to="/">Keranjang</router-link></b-dropdown-item>
+              <b-dropdown-item v-if="authenticated"><router-link to="/">Pesanan</router-link></b-dropdown-item>
+              <b-dropdown-item><router-link v-if="authenticated" to="/logout">Logout</router-link><router-link v-else to="/login">Login</router-link></b-dropdown-item>
             </b-nav-item-dropdown>
 
             <b-navbar-brand><router-link to="/"></router-link> </b-navbar-brand>
@@ -36,6 +36,18 @@
     <router-view />
   </html>
 </template>
+
+<script>
+  export default {
+    name: 'App',
+    data(){
+      return{
+        authenticated: false
+      }
+    },
+
+  }
+</script>
 
 <style>
   #navb{

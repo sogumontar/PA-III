@@ -11,12 +11,29 @@ public class ProdukDesaRequest {
     Integer harga;
     String deskripsi;
     String desa;
+    String gambar;
+
+    public ProdukDesaRequest(String nama, Integer harga, String deskripsi, String desa, String gambar) {
+        this.nama = nama;
+        this.harga = harga;
+        this.deskripsi = deskripsi;
+        this.desa = desa;
+        this.gambar = gambar;
+    }
 
     public ProdukDesaRequest(String nama, Integer harga, String deskripsi, String desa) {
         this.nama = nama;
         this.harga = harga;
         this.deskripsi = deskripsi;
         this.desa = desa;
+    }
+
+    public String getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
     }
 
     public String getDesa() {
