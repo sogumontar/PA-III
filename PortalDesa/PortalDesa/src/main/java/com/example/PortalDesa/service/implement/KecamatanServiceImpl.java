@@ -1,5 +1,6 @@
 package com.example.PortalDesa.service.implement;
 
+import com.example.PortalDesa.model.Kecamatan;
 import com.example.PortalDesa.repository.KecamatanRepo;
 import com.example.PortalDesa.service.KecamatanService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,8 +24,8 @@ public class KecamatanServiceImpl implements KecamatanService {
     }
 
     @Override
-    public ResponseEntity<?> findFirstByNama(String name) {
-        return null;
+    public Kecamatan findFirstByNama(String name) {
+        return kecamatanRepo.findFirstByNama(name);
     }
 
 

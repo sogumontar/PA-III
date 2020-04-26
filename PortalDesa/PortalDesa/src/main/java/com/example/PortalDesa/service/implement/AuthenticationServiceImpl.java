@@ -2,6 +2,7 @@ package com.example.PortalDesa.service.implement;
 
 import com.example.PortalDesa.exception.AppException;
 import com.example.PortalDesa.exception.AuthException;
+import com.example.PortalDesa.model.UserRole;
 import com.example.PortalDesa.model.defaults.RoleName;
 import com.example.PortalDesa.model.Roles;
 import com.example.PortalDesa.model.sequence.SequenceUsers;
@@ -13,6 +14,7 @@ import com.example.PortalDesa.payload.request.LoginRequest;
 import com.example.PortalDesa.payload.request.RegisterRequest;
 import com.example.PortalDesa.repository.RoleRepo;
 import com.example.PortalDesa.repository.SequenceUsersRepo;
+import com.example.PortalDesa.repository.UserRoleRepo;
 import com.example.PortalDesa.repository.UsersRepo;
 import com.example.PortalDesa.security.JwtTokenProvider;
 import com.example.PortalDesa.security.UserPrincipal;
@@ -62,6 +64,9 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     @Autowired
     UsersServiceImpl usersService;
 
+    @Autowired
+    UserRoleRepo userRoleRepo;
+
     @Override
     public ResponseEntity<?> register(@RequestBody RegisterRequest registerRequest){
 
@@ -93,11 +98,27 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         return ResponseEntity.created(location).body(new AuthenticationResponse(timestamp.toString(),"201", "OK", "User registered successfully"));
     }
+    @Override
+    public void registerSeed(@RequestBody RegisterRequest registerRequest) {
+
+        Roles roles = checkRole(registerRequest.getRole().toString());
+        String skuFix = skuGenerator(registerRequest.getUsername(), roles.toString());
+        Users users = new Users(
+                skuFix,
+                registerRequest.getName(),
+                registerRequest.getAlamat(),
+                registerRequest.getUsername(),
+                registerRequest.getEmail(),
+                registerRequest.getPassword(),
+                1
+        );
+        users.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
+        users.setRoles(Collections.singleton(roles));
+        Users save = usersRepo.save(users);
+    }
 
     @Override
     public ResponseEntity<?> login(@Valid @RequestBody LoginRequest loginRequest){
-        System.out.println("username :" + loginRequest.getUsername());
-        System.out.println("password :" + loginRequest.getPassword());
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         loginRequest.getUsername(),
@@ -108,12 +129,21 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         SecurityContextHolder.getContext().setAuthentication(authentication);
         Users user = usersService.findByUsername(loginRequest.getUsername());
         UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
-//        String role=userPrincipal.getAuthorities().toString();
+        UserRole userRole=userRoleRepo.findFirstBySku_user(userPrincipal.getSku());
+        String role="";
+        if(userRole.getRole_id()==1){
+            role="ROLE_USER";
+        }else if(userRole.getRole_id()==2){
+            role="ROLE_ADMIN";
+        }else{
+            role="ROLE_MERCHANT";
+        }
+
         if (userPrincipal.getStatus()!=1) throw new AuthException("User has been blocked");
         String token=jwtTokenProvider.generateToken(authentication);
         return ResponseEntity.ok(new JwtLoginResponse(
                 token,
-                "ROLE_ADMIN",
+                role,
                 userPrincipal.getSku(),
                 userPrincipal.getStatus(),
                 userPrincipal.getName(),
@@ -134,9 +164,9 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
         Roles roles;
         RoleName roleName=RoleName.ROLE_USER;
-        if(role.equals(RoleName.ROLE_ADMIN)){
+        if(role.equals(RoleName.ROLE_ADMIN.toString())){
             roleName=RoleName.ROLE_ADMIN;
-        }else if(role.equals(RoleName.ROLE_MERCHANT)){
+        }else if(role.equals(RoleName.ROLE_MERCHANT.toString())){
             roleName=RoleName.ROLE_MERCHANT;
         }
         roles = roleRepo.findByName(roleName)

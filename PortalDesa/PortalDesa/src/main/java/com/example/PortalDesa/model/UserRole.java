@@ -17,6 +17,14 @@ public class UserRole  {
 
     private Integer role_id;
 
+    public UserRole() {
+    }
+
+    public UserRole(String sku_user, Integer role_id) {
+        this.sku_user = sku_user;
+        this.role_id = role_id;
+    }
+
     public String getSku_user() {
         return sku_user;
     }

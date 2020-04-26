@@ -34,9 +34,9 @@ public class RoleSeeder {
     //pengecekan
     @EventListener
     public void seeder(ContextRefreshedEvent contextRefreshedEvent) {
+        checkRoleIfExists(RoleName.ROLE_USER);
         checkRoleIfExists(RoleName.ROLE_ADMIN);
         checkRoleIfExists(RoleName.ROLE_MERCHANT);
-        checkRoleIfExists(RoleName.ROLE_USER);
     }
 
 }

@@ -2,6 +2,7 @@ package com.example.PortalDesa.repository;
 
 import com.example.PortalDesa.model.Desa;
 import com.example.PortalDesa.model.Kecamatan;
+import com.example.PortalDesa.model.defaults.KecamatanDefaults;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -12,6 +13,7 @@ import java.util.List;
  */
 @Repository
 public interface DesaRepo extends JpaRepository<Desa,String> {
-    public Desa findByNama(String nama);
+    public Desa findFirstByNama(String nama);
     public List findAllByKecamatan(Kecamatan kecamatan);
+    public List findAllByKecamatan(KecamatanDefaults kecamatan);
 }

@@ -1,5 +1,6 @@
 package com.example.PortalDesa.service;
 
+import com.example.PortalDesa.model.Kecamatan;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
@@ -10,6 +11,6 @@ import java.util.List;
 public interface KecamatanService {
     public List findAll();
 
-    public ResponseEntity<?> findFirstByNama(String name);
+    public Kecamatan findFirstByNama(String name);
 
 }
