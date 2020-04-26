@@ -11,11 +11,19 @@ import org.springframework.web.bind.annotation.RequestBody;
  */
 public interface AuthenticationService {
     ResponseEntity<?> register(@RequestBody RegisterRequest registerRequest);
+    void registerSeed(@RequestBody RegisterRequest registerRequest);
+
     ResponseEntity<?> login(@RequestBody LoginRequest loginRequest);
+
     Roles checkRole(String role);
-    String skuGenerator(String Username,String role);
+
+    String skuGenerator(String Username, String role);
+
     ResponseEntity<?> checkUsername(String username);
+
     ResponseEntity<?> checkEmail(String email);
+
     String sub_str(String str);
+
     Boolean checkPassword(String password, String confirmPassword);
 }

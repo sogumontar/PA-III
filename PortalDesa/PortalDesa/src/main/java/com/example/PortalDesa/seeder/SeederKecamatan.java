@@ -16,7 +16,7 @@ import java.util.UUID;
  * Created by Sogumontar Hendra Simangunsong on 14/04/2020.
  */
 @Component
-public class KecamatanSeeder {
+public class SeederKecamatan {
     @Autowired
     KecamatanRepo kecamatanRepo;
 

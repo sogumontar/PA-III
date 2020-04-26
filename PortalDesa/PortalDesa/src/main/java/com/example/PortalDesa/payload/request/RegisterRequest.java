@@ -12,7 +12,6 @@ import javax.validation.constraints.NotBlank;
  * Created by Sogumontar Hendra Simangunsong on 09/04/2020.
  */
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
 public class RegisterRequest {
 
@@ -37,6 +36,16 @@ public class RegisterRequest {
 
     @NotBlank
     private RoleName role;
+
+    public RegisterRequest(@NotBlank String name, @NotBlank String alamat, @NotBlank String username, @NotBlank @Email String email, @NotBlank String password, @NotBlank String confirmPassword, @NotBlank RoleName role) {
+        this.name = name;
+        this.alamat = alamat;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.confirmPassword = confirmPassword;
+        this.role = role;
+    }
 
     public String getUsername() {
         return username;
