@@ -39,20 +39,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb1cd72d-22e7-4066-aa5f-c0bb735bc78b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/.idea/Api-Spec.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/AdminDevApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/DesaApi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/AuthenticationApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/AuthenticationApi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/KecamatanDesaApi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/PenginapanApi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/ProdukDesaApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/AdminDevApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/AdminDevApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/DesaApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/DesaApi.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/PortalDesa.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/CustomUserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtAuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtTokenProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/UserPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/UserPrincipal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/SeederKecamatan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/SeederKecamatan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/AuthenticationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/AuthenticationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/PenginapanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/PenginapanServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
