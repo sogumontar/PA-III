@@ -25,7 +25,17 @@
 {
     "code": 200,
     "status": "OK",
-    "message": "User Register Success"
+    "message": "User Register Success",
+    "data" : {
+      "name": "name",
+      "alamat" : "alamat",
+      "username" : "username",
+      "email" : "email",
+      "password" : "password",
+      "confirmPassword" : "confirmPassword",
+      "role" : "role"
+    }
+     
 }
 ```
 + Response Body (Fail) :
