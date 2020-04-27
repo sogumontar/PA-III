@@ -39,34 +39,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb1cd72d-22e7-4066-aa5f-c0bb735bc78b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/DesaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/DesaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/DesaControllerRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/DesaControllerRoute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/payload/request/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/payload/request/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/DesaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/DesaRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/UserRoleRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/UserRoleRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/security/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/security/UserPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/seeder/KecamatanSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/seeder/SeederKecamatan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/seeder/RoleSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/seeder/RoleSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/KecamatanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/KecamatanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/AuthenticationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/KecamatanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/KecamatanServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/DesaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/DesaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/KecamatanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/KecamatanController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/DesaControllerRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/DesaControllerRoute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/UserRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/RegisterRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/RegisterRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/DesaRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/DesaRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/UserPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/UserPrincipal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/KecamatanSeeder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/RoleSeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/RoleSeeder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/AuthenticationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/KecamatanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/KecamatanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/AuthenticationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/AuthenticationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/KecamatanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/KecamatanServiceImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,6 +81,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -124,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PortalDesaApplication (1)">
+  <component name="RunManager" selected="Application.SeederKecamatan">
     <configuration name="SeederKecamatan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.seeder.SeederKecamatan" />
       <module name="PortalDesa" />
@@ -160,7 +135,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PortalDesaApplication (1)" />
         <item itemvalue="Application.SeederKecamatan" />
       </list>
     </recent_temporary>
