@@ -39,11 +39,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb1cd72d-22e7-4066-aa5f-c0bb735bc78b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/KecamatanDesaApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/PenginapanApi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/ProdukDesaApi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/AdminDevApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/AdminDevApi.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/DesaApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/DesaApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/KecamatanDesaApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec/Api-Spec/KecamatanDesaApi.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

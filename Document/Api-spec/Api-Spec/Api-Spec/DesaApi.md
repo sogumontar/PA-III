@@ -105,10 +105,11 @@
         "code": 200,
         "status": "OK",
         "data" : {
-            "nama" : "laguboti",
-            "jlhDesa" : 16 ,
-            "produk" : "jagung",
-            "jumlahPenduduk" : 500 
+            "namaDesa" : "laguboti",
+            "namaKepalaDesa" : "Benyamin" ,
+            "jumlahPenduduk" : 500,
+            "status" : "aktif",
+            "gambar" : "jpg" 
         }   
     }
     ```

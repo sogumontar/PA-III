@@ -27,13 +27,13 @@
     "status": "OK",
     "message": "User Register Success",
     "data" : {
-      "name": "name",
-      "alamat" : "alamat",
-      "username" : "username",
-      "email" : "email",
-      "password" : "password",
-      "confirmPassword" : "confirmPassword",
-      "role" : "role"
+      "name": "sogu",
+      "alamat" : "silaen",
+      "username" : "sogu",
+      "email" : "sogu@gmail.com",
+      "password" : "sogu",
+      "confirmPassword" : "sogu",
+      "role" : "admin"
     }
      
 }

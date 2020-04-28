@@ -16,11 +16,11 @@
     "code": 200,
     "status": "OK",
     "data" : {
-        "nama" : "sitoluama",
-        "username" : "hendra",
-        "role" : "ROLE_ADMIN",
-        "status" : 1,
-        "alamat" : "silaen"  
+        "namaKecamatan" : "Balige",
+        "namaCamat" : "hendra",
+        "jumlahDesa" : 16,
+        "deskripsi" : "sitoluama",
+        "gambar" : "jpg"  
     }   
 }
 ```
