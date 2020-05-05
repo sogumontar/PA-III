@@ -4,7 +4,10 @@ package com.example.PortalDesa.controller.route;
  * Created by Sogumontar Hendra Simangunsong on 21/04/2020.
  */
 public interface PenginapanControllerRoute {
+    //forAll
     public String ROUTE_PENGINAPAN = "/penginapan";
+
+
     public String ROUTE_PENGINAPAN_ALL = "/";
     public String ROUTE_PENGINAPAN_BY_SKU = "/{sku}";
     public String ROUTE_ADD_PENGINAPAN = "/add";
