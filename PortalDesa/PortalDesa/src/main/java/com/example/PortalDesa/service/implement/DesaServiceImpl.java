@@ -41,7 +41,8 @@ public class DesaServiceImpl implements DesaService {
                 desaRequest.getNama(),
                 KecamatanDefaults.valueOf(desaRequest.getKecamatan()),
                 1,
-                skuAdmin
+                skuAdmin,
+                desaRequest.getKecamatan()
         );
         desaRepo.save(desa);
         return ResponseEntity.ok(desa);
@@ -57,7 +58,7 @@ public class DesaServiceImpl implements DesaService {
     public void addDesaPicture(String base64, String skuDesa) throws IOException {
         File currentDirFile = new File("");
         String helper = currentDirFile.getAbsolutePath();
-        String currentDir = helper+"/Picture";
+        String currentDir = helper+"/Picture/Desa";
         String pict =skuDesa+".png";
         String partSeparator = ",";
         String encodedImg ="";

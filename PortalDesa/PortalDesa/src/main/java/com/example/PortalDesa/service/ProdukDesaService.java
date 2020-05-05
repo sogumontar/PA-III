@@ -16,6 +16,8 @@ public interface ProdukDesaService {
 
     public void save(ProdukDesaRequest request);
 
+    public List findAllBySkuDesa(String sku);
+
     public List<ProdukDesa> findAll();
 
     public ProdukDesa findBySku(String sku);
@@ -31,4 +33,6 @@ public interface ProdukDesaService {
     public void activate(String sku);
 
     public List<ProdukDesa> findAllSuspend();
+
+    public void addGambarDesa(String base64, String sku);
 }

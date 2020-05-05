@@ -21,15 +21,18 @@ public interface ProdukDesaRepo extends JpaRepository<ProdukDesa, String> {
 
     public ProdukDesa findFirstBySku(String sku);
 
-    @Modifying
-    @Transactional
-    @Query("UPDATE ProdukDesa p  SET p.nama=?2, p.harga=?3, p.deskripsi=?4, p.namaDesa=?5 WHERE p.sku LIKE ?1")
-    public void updateBySku(String sku, String nama, Integer harga, String deskripsi, String desa);
+    @Query("SELECT p FROM ProdukDesa p WHERE p.status =1 AND p.skuDesa LIKE ?1 ")
+    List findAllBySkuAdmin(String skuAdmin);
 
     @Modifying
     @Transactional
-    @Query("UPDATE ProdukDesa p  SET p.nama=?2, p.harga=?3, p.deskripsi=?4, p.namaDesa=?5, p.gambar=?6 WHERE p.sku LIKE ?1")
-    public void updateBySkuWithGambar(String sku, String nama, Integer harga, String deskripsi, String desa, String gambar);
+    @Query("UPDATE ProdukDesa p  SET p.nama=?2, p.harga=?3, p.deskripsi=?4 WHERE p.sku LIKE ?1")
+    public void updateBySku(String sku, String nama, Integer harga, String deskripsi );
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE ProdukDesa p  SET p.nama=?2, p.harga=?3, p.deskripsi=?4, p.gambar=?5 WHERE p.sku LIKE ?1")
+    public void updateBySkuWithGambar(String sku, String nama, Integer harga, String deskripsi, String gambar);
 
     @Modifying
     @Transactional
@@ -47,5 +50,8 @@ public interface ProdukDesaRepo extends JpaRepository<ProdukDesa, String> {
     public void activate(String sku);
 
     public List<ProdukDesa> findAllByStatus(Integer status);
+
+    @Query("SELECT COUNT(u.sku) FROM ProdukDesa u WHERE u.skuDesa LIKE ?1 ")
+    Integer counter (String skuDesa);
 
 }
