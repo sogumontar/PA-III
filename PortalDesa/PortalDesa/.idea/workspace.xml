@@ -39,9 +39,146 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb1cd72d-22e7-4066-aa5f-c0bb735bc78b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_flipkart_zjsonpatch_zjsonpatch_0_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_helpers_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_tomakehurst_wiremock_jre8_2_24_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_continuation_9_4_25_v20191220.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_25_v20191220.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_25_v20191220.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_25_v20191220.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_4_25_v20191220.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_4_25_v20191220.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlets_9_4_25_v20191220.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_25_v20191220.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_4_25_v20191220.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_25_v20191220.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_legacy_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_placeholders_2_6_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PortalDesa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PortalDesa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_2_4_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/DesaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/DesaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/KecamatanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/KecamatanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/ProdukDesaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/ProdukDesaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/TransaksiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/TransaksiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/DesaControllerRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/DesaControllerRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/KecamatanControllerRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/KecamatanControllerRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/TransaksiControllerRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/TransaksiControllerRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Desa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Desa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Penginapan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Penginapan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/ProdukDesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/ProdukDesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/TransaksiProduk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/TransaksiProduk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/defaults/KecamatanDefaults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/defaults/KecamatanDefaults.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/ProdukDesaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/ProdukDesaRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/UsersRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/UsersRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/ProdukDesaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/ProdukDesaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/DesaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/DesaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/PenginapanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/PenginapanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/PortalDesaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/PortalDesaApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/AdminDevController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/AdminDevController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/DesaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/DesaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/KecamatanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/KecamatanController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/PenginapanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/PenginapanController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/ProdukDesaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/ProdukDesaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/TransaksiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/TransaksiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/DesaControllerRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/DesaControllerRoute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/KecamatanControllerRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/KecamatanControllerRoute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/ProdukDesaControllerRoute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/TransaksiControllerRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/TransaksiControllerRoute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AppException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AppException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AuthException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/exception/AuthException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/CustomerAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/CustomerAddress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Desa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Desa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Kecamatan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Kecamatan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Penginapan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Penginapan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/ProdukDesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/ProdukDesa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Roles$RolesBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Roles$RolesBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Roles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Roles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/TransaksiProduk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/TransaksiProduk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/KecamatanDefaults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/KecamatanDefaults.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/RoleName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/defaults/RoleName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/sequence/SequenceProduk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/sequence/SequenceProduk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/sequence/SequenceUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/sequence/SequenceUsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/timestamp/Timestamp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/timestamp/Timestamp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/ApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/ApiResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/AuthenticationResponse$AuthenticationResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/AuthenticationResponse$AuthenticationResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/AuthenticationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/AuthenticationResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/CreateResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/CreateResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/DesaResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/DesaResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/JwtLoginResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/JwtLoginResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/AddDesaPictureRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/AddDesaPictureRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/DesaRequest$DesaRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/DesaRequest$DesaRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/DesaRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/DesaRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/LoginRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/PenginapanRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/PenginapanRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/ProdukDesaRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/ProdukDesaRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/RegisterRequest$RegisterRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/RegisterRequest$RegisterRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/RegisterRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/payload/request/RegisterRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/AlamatCustomerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/AlamatCustomerRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/DesaRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/DesaRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/KecamatanRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/KecamatanRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/PenginapanRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/PenginapanRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/ProdukDesaRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/ProdukDesaRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/RoleRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/RoleRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/SequenceProdukRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/SequenceProdukRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/SequenceUsersRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/SequenceUsersRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/TransaksiProdukRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/TransaksiProdukRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/UserRoleRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/UserRoleRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/UsersRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/UsersRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtAuthenticationEntryPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/JwtTokenProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/UserPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/security/UserPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/RoleSeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/RoleSeeder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/SeederAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/SeederAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/SeederKecamatan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/seeder/SeederKecamatan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/AuthenticationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/DesaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/DesaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/KecamatanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/KecamatanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/PenginapanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/PenginapanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/ProdukDesaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/ProdukDesaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/TransaksiService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/TransaksiService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/UsersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/AuthenticationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/AuthenticationServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/DesaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/DesaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/KecamatanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/KecamatanServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/PenginapanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/PenginapanServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/ProdukDesaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/TransaksiServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/TransaksiServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/UsersServiceImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +211,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -106,12 +243,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Document/Api-spec/Api-Spec" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\PA III\PA III\Backend\PA-III\PortalDesa\PortalDesa\src\main\java\com\example\PortalDesa" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.PortalDesa" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\PA III\PA III\Backend\PA-III\PortalDesa\PortalDesa\src" />
+      <recent name="D:\Project\PA III\PA III\Backend\PA-III\PortalDesa\PortalDesa\src\test\java\com.example.PortalDesa" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -125,42 +274,83 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PortalDesaApplication">
-    <configuration name="PortalDesaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.PortalDesaApplication" />
+  <component name="RunManager" selected="JUnit.PenginapanServiceImplTest.findBySku">
+    <configuration name="PenginapanServiceImplTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PortalDesa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.PortalDesa.*" />
+          <option name="PATTERN" value="com.example.PortalDesa.serviceImpl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.PenginapanServiceImplTest" />
+      <option name="METHOD_NAME" value="findAllTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeederKecamatan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.seeder.SeederKecamatan" />
+    <configuration name="PenginapanServiceImplTest.findBySku" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PortalDesa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.PortalDesa.seeder.*" />
+          <option name="PATTERN" value="com.example.PortalDesa.serviceImpl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.PenginapanServiceImplTest" />
+      <option name="METHOD_NAME" value="findBySku" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PortalDesaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="PenginapanServiceImplTest.skuGenereator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PortalDesa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.PortalDesa.*" />
+          <option name="PATTERN" value="com.example.PortalDesa.serviceImpl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.PortalDesa.PortalDesaApplication" />
+      <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.PenginapanServiceImplTest" />
+      <option name="METHOD_NAME" value="skuGenereator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PenginapanServiceImplTest.substrTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PortalDesa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.PortalDesa.serviceImpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.PenginapanServiceImplTest" />
+      <option name="METHOD_NAME" value="substrTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProdukDesaServiceImplTests.findAllSuspendTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PortalDesa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.PortalDesa.serviceImpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ProdukDesaServiceImplTests" />
+      <option name="METHOD_NAME" value="findAllSuspendTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,8 +364,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PortalDesaApplication" />
-        <item itemvalue="Application.SeederKecamatan" />
+        <item itemvalue="JUnit.PenginapanServiceImplTest.findBySku" />
+        <item itemvalue="JUnit.PenginapanServiceImplTest.substrTest" />
+        <item itemvalue="JUnit.PenginapanServiceImplTest.skuGenereator" />
+        <item itemvalue="JUnit.PenginapanServiceImplTest.findAllTest" />
+        <item itemvalue="JUnit.ProdukDesaServiceImplTests.findAllSuspendTest" />
       </list>
     </recent_temporary>
   </component>
@@ -230,6 +423,15 @@
       <workItem from="1588594577170" duration="10594000" />
       <workItem from="1588678478642" duration="1952000" />
       <workItem from="1588680469902" duration="4533000" />
+      <workItem from="1588756063800" duration="3780000" />
+      <workItem from="1588771319276" duration="4249000" />
+      <workItem from="1588780810205" duration="101000" />
+      <workItem from="1588850380188" duration="2763000" />
+      <workItem from="1588931646980" duration="127000" />
+      <workItem from="1588996176806" duration="868000" />
+      <workItem from="1589093350702" duration="66000" />
+      <workItem from="1589185418178" duration="15670000" />
+      <workItem from="1589207864788" duration="7653000" />
     </task>
     <servers />
   </component>
@@ -294,5 +496,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1587226324579" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PortalDesa$PortalDesaApplication.ic" NAME="PortalDesaApplication Coverage Results" MODIFIED="1589208780407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.PortalDesa.*</FILTER>
+    </SUITE>
   </component>
 </project>

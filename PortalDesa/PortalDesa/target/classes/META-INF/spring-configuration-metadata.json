@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "storage",
+      "type": "com.example.PortalDesa.storage.StorageProperties",
+      "sourceType": "com.example.PortalDesa.storage.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "storage.location-book",
+      "type": "java.lang.String",
+      "sourceType": "com.example.PortalDesa.storage.StorageProperties"
+    },
+    {
+      "name": "storage.location-image",
+      "type": "java.lang.String",
+      "sourceType": "com.example.PortalDesa.storage.StorageProperties"
+    }
+  ],
+  "hints": []
+}
