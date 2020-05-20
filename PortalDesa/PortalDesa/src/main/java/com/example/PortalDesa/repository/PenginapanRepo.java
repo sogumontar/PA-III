@@ -16,12 +16,16 @@ import java.util.List;
 public interface PenginapanRepo extends JpaRepository<Penginapan, String> {
     @Query("SELECT p  FROM Penginapan p WHERE p.status=1")
     List findAll();
+
+    @Query("SELECT p  FROM Penginapan p WHERE p.status=1 AND p.skuMerchant LIKE ?1")
+    List findAllBySkuMerchant(String skuMerchant);
+
     Penginapan findFirstBySku(String sku);
 
     @Transactional
     @Modifying
-    @Query("UPDATE Penginapan p  SET p.nama=?2, p.harga=?3, p.deskripsi=?4, p.jumlahKamar=?5, p.lokasi=?6, p.desa=?7, p.kecamatan=?8  WHERE p.sku LIKE ?1")
-    void updateBySku(String sku, String nama, Integer harga, String deskripsi, Integer jumlahKamar, String lokasi, String desa, String kecamatan);
+    @Query("UPDATE Penginapan p  SET p.nama=?2, p.harga=?3, p.deskripsi=?4, p.jumlahKamar=?5, p.lokasi=?6 WHERE p.sku LIKE ?1")
+    void updateBySku(String sku, String nama, Integer harga, String deskripsi, Integer jumlahKamar, String lokasi);
 
     @Transactional
     @Modifying
@@ -42,4 +46,7 @@ public interface PenginapanRepo extends JpaRepository<Penginapan, String> {
     @Modifying
     @Query("UPDATE Penginapan p  SET p.status=1 WHERE p.sku LIKE ?1")
     void activatePenginapan(String sku);
+
+    @Query("SELECT COUNT(u.sku) FROM Penginapan u WHERE u.skuMerchant LIKE ?1 ")
+    Integer counter (String skuDesa);
 }

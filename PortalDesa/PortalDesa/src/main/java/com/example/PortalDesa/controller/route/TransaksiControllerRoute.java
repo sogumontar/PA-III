@@ -20,5 +20,7 @@ public interface TransaksiControllerRoute {
     public String ROUTE_TRANSAKSI_IMAGE_RESI = "/get/{filePath}";
 
     public String ROUTE_TRANSAKSI_FIND_ALL_PESANAN = "/pesanan";
+    public String ROUTE_TRANSAKSI_FIND_ALL_PESANAN_SUDAH_BAYAR = "/pesanan/sudah";
+    public String ROUTE_TRANSAKSI_CANCEL_PESANAN = "/pesanan/cancel/{sku}";
 
 }

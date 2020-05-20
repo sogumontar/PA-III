@@ -2,8 +2,10 @@ package com.example.PortalDesa.controller;
 
 import com.example.PortalDesa.controller.route.AuthenticationControllerRoute;
 import com.example.PortalDesa.model.Users;
+import com.example.PortalDesa.payload.DefaultResponse;
 import com.example.PortalDesa.payload.request.LoginRequest;
 import com.example.PortalDesa.payload.request.RegisterRequest;
+import com.example.PortalDesa.repository.UsersRepo;
 import com.example.PortalDesa.security.JwtTokenProvider;
 import com.example.PortalDesa.service.implement.AuthenticationServiceImpl;
 import com.example.PortalDesa.service.implement.UsersServiceImpl;
@@ -34,9 +36,21 @@ public class AuthenticationController {
     @Autowired
     UsersServiceImpl usersService;
 
-    @GetMapping("/test/{username}")
+    @Autowired
+    UsersRepo usersRepo;
+    @GetMapping(AuthenticationControllerRoute.ROUTE_FIND_ALL)
+    public ResponseEntity<?> findAll(){
+        return ResponseEntity.ok(usersRepo.findAll());
+    }
+
+    @GetMapping(AuthenticationControllerRoute.ROUTE_FIND_BY_USERNAME)
     public Users findwithUsername(@PathVariable String username){
         return usersService.findByUsername(username);
+    }
+
+    @GetMapping(AuthenticationControllerRoute.ROUTE_FIND_BY_SKU)
+    public Users findwithSku(@PathVariable String sku){
+        return usersService.findBySku(sku);
     }
 
     @PostMapping(AuthenticationControllerRoute.ROUTE_SIGN_UP)
@@ -49,4 +63,11 @@ public class AuthenticationController {
         return authenticationService.login(loginRequest);
     }
 
+    @PutMapping(AuthenticationControllerRoute.ROUTE_UPDATE_BY_SKU)
+    public ResponseEntity<?> update( @RequestBody Users request, @PathVariable String sku) {
+        if(authenticationService.updateUser(request,sku)){
+            return ResponseEntity.ok(new DefaultResponse("Sku anda salah",201));
+        }
+        return ResponseEntity.badRequest().body(new DefaultResponse("Sku anda salah",400));
+    }
 }

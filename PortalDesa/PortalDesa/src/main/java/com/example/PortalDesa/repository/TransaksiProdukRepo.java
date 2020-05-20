@@ -14,11 +14,11 @@ import java.util.List;
  */
 @Repository
 public interface TransaksiProdukRepo extends JpaRepository<TransaksiProduk,String> {
-    @Query("SELECT p.skuProduk, p.skuCustomer , p.alamat, p.harga , p.metode, d.nama, d.skuDesa, d.gambar, p.id FROM TransaksiProduk p, ProdukDesa d WHERE p.skuProduk LIKE d.sku AND p.status =1 AND p.skuCustomer LIKE ?1")
+    @Query("SELECT p FROM TransaksiProduk p  WHERE  p.status =1 AND p.skuCustomer LIKE ?1")
     public List findAllCartBySku(String sku);
-    @Query("SELECT p.skuProduk, p.skuCustomer , p.alamat, p.harga , p.metode, d.nama, d.skuDesa, d.gambar, p.id FROM TransaksiProduk p, ProdukDesa d WHERE p.skuProduk LIKE d.sku AND p.status =2 AND p.skuCustomer LIKE ?1")
+    @Query("SELECT p FROM TransaksiProduk p WHERE p.status =2 AND p.skuCustomer LIKE ?1")
     public List findAllPesananBySku(String sku);
-    @Query("SELECT  p.skuProduk, p.skuCustomer , p.alamat, p.harga , p.metode, d.nama, d.skuDesa, d.gambar, p.id FROM TransaksiProduk p, ProdukDesa d WHERE p.skuProduk LIKE d.sku AND p.status =3 AND p.skuCustomer LIKE ?1")
+    @Query("SELECT p   FROM TransaksiProduk p  WHERE p.status =3 AND p.skuCustomer LIKE ?1")
     public List findAllPesananSelesaBySku(String sku);
 
     public List findAllByStatus(Integer status);
@@ -27,6 +27,11 @@ public interface TransaksiProdukRepo extends JpaRepository<TransaksiProduk,Strin
     @Transactional
     @Query("UPDATE TransaksiProduk p  SET p.resi=?2 , p.status=3 WHERE p.id LIKE ?1")
     public void update(String idPesanan, String gambar);
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE TransaksiProduk p  SET  p.status=0 WHERE p.id LIKE ?1")
+    public void cancel(String idPesanan);
 
     @Query("SELECT COUNT(u.resi) FROM TransaksiProduk u WHERE u.skuCustomer LIKE ?1  AND u.status=2")
     Integer counter (String skuCustomer);

@@ -25,7 +25,7 @@ public interface ProdukDesaService {
 
     public void updateProduk(String sku, ProdukDesaRequest request);
 
-    public void updateProdukWithGambar(String sku, ProdukDesaRequest request);
+//    public void updateProdukWithGambar(String sku, ProdukDesaRequest request);
 
     public void suspendProduk(String sku);
 
@@ -37,6 +37,5 @@ public interface ProdukDesaService {
 
     public void addGambarDesa(String base64, String sku);
 
-    byte[] loadImage(String fileName) throws IOException;
 
 }
