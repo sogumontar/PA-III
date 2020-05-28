@@ -25,6 +25,7 @@ public class KeranjangController {
     @Autowired
     KeranjangRepo keranjangRepo;
 
+    //For Android
     @GetMapping(KeranjangControllerRoute.ROUTE_KERANJANG_ALL)
     public ResponseEntity<?> findAll() {
         return ResponseEntity.ok(keranjangService.findAll());
@@ -40,25 +41,61 @@ public class KeranjangController {
         return ResponseEntity.ok(keranjangService.findAllByMerchant(sku));
     }
 
+    //For Web
+    @GetMapping(KeranjangControllerRoute.ROUTE_WEB_KERANJANG_ALL)
+    public ResponseEntity<?> findAllForWeb() {
+        return ResponseEntity.ok(keranjangRepo.findAllForWeb());
+    }
+
+    @GetMapping(KeranjangControllerRoute.ROUTE_WEB_KERANJANG_WITH_SKU_CUSTOMER)
+    public ResponseEntity<?> findAllWithSkuCustomerForWeb(@PathVariable String sku) {
+        return ResponseEntity.ok(keranjangRepo.findAllBySkuCustomerForWeb(sku));
+    }
+
+    @GetMapping(KeranjangControllerRoute.ROUTE_WEB_KERANJANG_WITH_SKU_MERCHANT)
+    public ResponseEntity<?> findAllWithSkuMerchantForWeb(@PathVariable String sku) {
+        return ResponseEntity.ok(keranjangRepo.findAllByMerchantForWeb(sku));
+    }
+
     @PostMapping(KeranjangControllerRoute.ROUTE_KERANJANG_SAVE)
     public ResponseEntity<?> save(@RequestBody Keranjang keranjang) {
-        Keranjang keranjang1 = new Keranjang(
-                keranjang.getIdCustomer(),
+        KeranjangRequestCheck keranjangRequestCheck= new KeranjangRequestCheck(
+                keranjang.getId(),
                 keranjang.getIdProduk(),
-                keranjang.getJumlah(),
-                keranjang.getSkuDesa(),
-                1,
-                keranjang.getHarga()
+                keranjang.getIdCustomer(),
+                keranjang.getJumlah()
         );
-        keranjangRepo.save(keranjang1);
+        Keranjang keranjang1 =keranjangRepo.findByIdProdukAndIdCustomerAndStatus(keranjang.getIdProduk(),keranjang.getIdCustomer(),1);
+        if(keranjang1!=null){
+            updateCart(keranjangRequestCheck, keranjang1.getJumlah()+keranjang.getJumlah());
+        }else {
+            Keranjang keranjang2 = new Keranjang(
+                    keranjang.getIdCustomer(),
+                    keranjang.getIdProduk(),
+                    keranjang.getJumlah(),
+                    keranjang.getSkuDesa(),
+                    1,
+                    keranjang.getHarga()
+            );
+            keranjangRepo.save(keranjang2);
+        }
         return ResponseEntity.ok(new DefaultResponse("Success", 201));
+    }
+
+    public Boolean checks(KeranjangRequestCheck keranjangRequestCheck){
+        Boolean val=keranjangRepo.existsByIdProdukAndIdCustomerAndStatus(keranjangRequestCheck.getIdProduk(), keranjangRequestCheck.getSkuCustomer(),1);
+        return val;
+    }
+
+    public void updateCart(KeranjangRequestCheck keranjangRequestCheck, Integer jumlah){
+        keranjangRepo.updateJumlahCart(keranjangRequestCheck.getIdProduk(), keranjangRequestCheck.getSkuCustomer(),jumlah);
     }
 
     @PostMapping(KeranjangControllerRoute.ROUTE_KERANJANG_CHECK)
     public ResponseEntity<?> check(@RequestBody KeranjangRequestCheck keranjangRequestCheck) {
-        Boolean val=keranjangRepo.existsByIdProdukAndIdCustomerAndStatus(keranjangRequestCheck.getIdProduk(), keranjangRequestCheck.getSkuCustomer(),1);
+//        Boolean val=keranjangRepo.existsByIdProdukAndIdCustomerAndStatus(keranjangRequestCheck.getIdProduk(), keranjangRequestCheck.getSkuCustomer(),1);
         Integer value=0;
-        if(val==Boolean.TRUE){
+        if(checks(keranjangRequestCheck)==Boolean.TRUE){
             value=1;
         }
         return ResponseEntity.ok(new DefaultResponse("sukses",value));

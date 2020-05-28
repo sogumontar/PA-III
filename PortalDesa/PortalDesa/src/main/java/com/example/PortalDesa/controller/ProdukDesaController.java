@@ -61,6 +61,12 @@ public class ProdukDesaController {
         return ResponseEntity.ok(new DefaultResponse("add gambar sukses",200));
     }
 
+    @PostMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_UPDATE_GAMBAR)
+    public ResponseEntity<?> updateGambarDesa(@RequestBody ProdukDesaRequest request){
+        produkDesaService.updateGambarDesa(request.getGambar(),request.getNama());
+        return ResponseEntity.ok(new DefaultResponse("add gambar sukses",200));
+    }
+
     @PutMapping(ProdukDesaControllerRoute.ROUTE_PRODUK_DESA_UPDATE)
     public ResponseEntity<?> updateProdukDesa(@RequestBody ProdukDesaRequest request, @PathVariable String sku) {
         produkDesaService.updateProduk(sku, request);

@@ -145,9 +145,32 @@ public class ProdukDesaServiceImpl implements ProdukDesaService {
         }
         File file =new File(currentDir+"/"+pict);
         try(FileOutputStream fos = new FileOutputStream(file)){
-            byte[] decoder = Base64.getDecoder().decode(encodedImg);
-            fos.write(decoder);
-            System.out.println("Image file saved");
+//            byte[] decoder = Base64.getDecoder().decode(encodedImg);
+            byte[] dataBytes =  Base64.getMimeDecoder().decode(encodedImg);
+            fos.write(dataBytes);
+            System.out.println("Image file saved " + base64);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    @Override
+    public void updateGambarDesa(String base64, String sku) {
+        File currentDirFile = new File("");
+        String helper = currentDirFile.getAbsolutePath();
+        String currentDir = helper+"/src/main/resources/static/images/ProdukDesa/";
+        String pict =sku;
+        String partSeparator = ",";
+        String encodedImg ="";
+        if (base64.contains(partSeparator)) {
+            encodedImg = base64.split(partSeparator)[1];
+        }
+        File file =new File(currentDir+"/"+pict.substring(12));
+        try(FileOutputStream fos = new FileOutputStream(file)){
+//            byte[] decoder = Base64.getDecoder().decode(encodedImg);
+            byte[] dataBytes =  Base64.getMimeDecoder().decode(encodedImg);
+            fos.write(dataBytes);
+            System.out.println("Image file saved " + base64);
         }catch(Exception e){
             System.out.println(e.getMessage());
         }

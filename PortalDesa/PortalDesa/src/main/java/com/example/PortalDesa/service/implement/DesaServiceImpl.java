@@ -32,18 +32,23 @@ public class DesaServiceImpl implements DesaService {
     @Autowired
     UsersRepo usersRepo;
 
+    public String getSku(String rand){
+        return rand;
+    }
     @Override
     public ResponseEntity<?> addDesa(DesaRequest desaRequest) {
         Users users =usersRepo.findByUsername(desaRequest.getUsername());
         String skuAdmin=users.getSku();
         System.out.println(skuAdmin);
+        String skuFix=getSku(UUID.randomUUID().toString());
         Desa desa = new Desa(
-                UUID.randomUUID().toString(),
+                skuFix,
                 desaRequest.getNama(),
                 KecamatanDefaults.valueOf(desaRequest.getKecamatan()),
                 1,
                 skuAdmin,
-                desaRequest.getKecamatan()
+                desaRequest.getKecamatan(),
+                skuFix+".png"
         );
         desaRepo.save(desa);
         return ResponseEntity.ok(desa);
@@ -52,13 +57,14 @@ public class DesaServiceImpl implements DesaService {
     @Override
     public void updateDesa(String sku,DesaRequest desaRequest) {
         System.out.println(sku);
+        System.out.println(desaRequest.getNamaKepalaDesa());
         desaRepo.updateBySku(
                 sku,
                 desaRequest.getNama(),
                 desaRequest.getNamaKepalaDesa(),
                 KecamatanDefaults.valueOf(desaRequest.getKecamatan()),
                 desaRequest.getJumlahPenduduk(),
-                PathImageDb.PATH_FOR_IMAGE_DESA+sku+".png"
+                sku+".png"
         );
     }
 
@@ -75,11 +81,12 @@ public class DesaServiceImpl implements DesaService {
         }
         File file =new File(currentDir+"/"+pict);
         try(FileOutputStream fos = new FileOutputStream(file)){
-            byte[] decoder = Base64.getDecoder().decode(encodedImg);
-            fos.write(decoder);
+            byte[] dataBytes =  Base64.getMimeDecoder().decode(encodedImg);
+            fos.write(dataBytes);
             System.out.println("Image file saved");
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
+
     }
 }

@@ -36,13 +36,14 @@ public class TransaksiServiceImpl implements TransaksiService {
         transaksiProdukRepo.save(transaksiProduk1);
     }
 
+
     @Override
     public void update(String idpesanan,String idCustomer, String base64) {
         Integer val = transaksiProdukRepo.counter(idCustomer);
         val++;
         File currentDirFile = new File("");
         String helper = currentDirFile.getAbsolutePath();
-        String currentDir = helper+"/Picture/Resi";
+        String currentDir = helper+"/src/main/resources/static/images/Resi/";
         String pict =idCustomer+"-"+val.toString()+".png";
         String partSeparator = ",";
         String encodedImg ="";
@@ -51,8 +52,9 @@ public class TransaksiServiceImpl implements TransaksiService {
         }
         File file =new File(currentDir+"/"+pict);
         try(FileOutputStream fos = new FileOutputStream(file)){
-            byte[] decoder = Base64.getDecoder().decode(encodedImg);
-            fos.write(decoder);
+//            byte[] decoder = Base64.getDecoder().decode(encodedImg);
+            byte[] dataBytes =  Base64.getMimeDecoder().decode(encodedImg);
+            fos.write(dataBytes);
             System.out.println("Image file saved");
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -60,8 +62,26 @@ public class TransaksiServiceImpl implements TransaksiService {
         transaksiProdukRepo.update(idpesanan,pict);
     }
 
+
+
+
     @Override
     public void updateCart(String skuUser) {
         keranjangRepo.updateKeranjang(skuUser);
+    }
+
+    @Override
+    public void terimaPesanan(String idPesanan) {
+        transaksiProdukRepo.actionPesanan(idPesanan,4);
+    }
+
+    @Override
+    public void tolakPesanan(String idPesanan) {
+        transaksiProdukRepo.actionPesanan(idPesanan,5);
+    }
+
+    @Override
+    public TransaksiProduk findById(String idPesanan) {
+        return transaksiProdukRepo.findFirstById(idPesanan);
     }
 }
