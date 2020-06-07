@@ -24,6 +24,21 @@ public class ArtikelServiceImpl implements ArtikelService {
     ArtikelRepo artikelRepo;
 
     @Override
+    public List findAllArtikelForWeb() {
+        return artikelRepo.findAllForWeb();
+    }
+
+    @Override
+    public List findAllArtikelBySkuForWeb(String sku) {
+        return artikelRepo.findAllBySkuAdminForWeb(sku);
+    }
+
+    @Override
+    public Artikel findDetailArtikelByIdForWeb(String Id) {
+        return artikelRepo.findFirstByIdForWeb(Id);
+    }
+
+    @Override
     public List findAllArtikel() {
         return artikelRepo.findAll();
     }
@@ -48,7 +63,8 @@ public class ArtikelServiceImpl implements ArtikelService {
                 artikelRequest.getIsi(),
                 artikelRequest.getSumber(),
                 artikelRequest.getPenulis(),
-                sku
+                sku,
+                1
         );
         return artikelRepo.save(artikel);
     }

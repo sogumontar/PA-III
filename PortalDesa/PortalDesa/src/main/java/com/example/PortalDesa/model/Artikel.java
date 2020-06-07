@@ -40,7 +40,10 @@ public class Artikel {
     @Column(name = FieldForArticle.FIELD_ARTIKEL_SKU_ADMIN_DESA)
     String skuAdmin;
 
-    public Artikel(String id, String judul, String date, String jenis, String isi, String sumber, String penulis, String skuAdmin) {
+    @Column(name = FieldForArticle.FIELD_ARTIKEL_STATUS)
+    Integer status;
+
+    public Artikel(String id, String judul, String date, String jenis, String isi, String sumber, String penulis, String skuAdmin, Integer status) {
         this.id = id;
         this.judul = judul;
         this.date = date;
@@ -49,6 +52,15 @@ public class Artikel {
         this.sumber = sumber;
         this.penulis = penulis;
         this.skuAdmin = skuAdmin;
+        this.status = status;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public String getSkuAdmin() {

@@ -9,6 +9,12 @@ import java.util.List;
  * Created by Sogumontar Hendra Simangunsong on 30/05/2020.
  */
 public interface ArtikelService {
+    //For Web
+    List findAllArtikelForWeb();
+    List findAllArtikelBySkuForWeb(String sku);
+    Artikel findDetailArtikelByIdForWeb(String Id);
+
+
     List findAllArtikel();
     List findAllArtikelBySku(String sku);
     Artikel findDetailArtikelById(String Id);

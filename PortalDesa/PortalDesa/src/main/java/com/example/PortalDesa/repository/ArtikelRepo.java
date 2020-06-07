@@ -14,7 +14,24 @@ import java.util.List;
  */
 @Repository
 public interface ArtikelRepo extends JpaRepository<Artikel, String> {
+
+    List findAllByJenis(String jenis);
+
+    @Query("SELECT k ,p from Artikel k JOIN Desa p  ON k.skuAdmin LIKE p.skuAdmin ")
+    List findAllForWeb();
+
+    @Query("SELECT k ,p from Artikel k JOIN Desa p  ON k.skuAdmin LIKE p.skuAdmin WHERE k.jenis LIKE?1  AND k.skuAdmin LIKE?2")
+    List findAllByJenis(String jenis, String sku);
+
+    @Query("SELECT k ,p from Artikel k JOIN Desa p  ON k.skuAdmin LIKE p.skuAdmin  WHERE k.skuAdmin LIKE?1")
+    List findAllBySkuAdminForWeb(String skuAdmin);
+
+    @Query("SELECT k ,p from Artikel k JOIN Desa p  ON k.skuAdmin LIKE p.skuAdmin  WHERE k.id LIKE?1")
+    Artikel findFirstByIdForWeb(String id);
+
     List findAllBySkuAdmin(String skuAdmin);
+
+    List findAllBySkuAdminAndJenis(String skuAdmin, String jenis);
 
     Artikel findFirstById(String id);
 

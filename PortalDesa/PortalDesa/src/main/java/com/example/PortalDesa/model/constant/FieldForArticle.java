@@ -12,4 +12,5 @@ public interface FieldForArticle {
     public String FIELD_ARTIKEL_SUMBER = "sumber";
     public String FIELD_ARTIKEL_PENULIS = "penulis";
     public String FIELD_ARTIKEL_SKU_ADMIN_DESA = "sku_admin_desa";
+    public String FIELD_ARTIKEL_STATUS = "status";
 }
