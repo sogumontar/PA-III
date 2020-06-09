@@ -94,6 +94,60 @@ public class MailServiceImpl implements MailService {
     }
 
     @Override
+    public String sendEmailPesanan(String metode, String alamat,Integer harga, String email) {
+//        Users users= usersService.findBySku(skuCustomer);
+//        TransaksiProduk transaksiProduk = transaksiService.findById(idPesanan);
+        String keterangan ="Pesanan Baru";
+        String metodeP;
+        if(metode.equals("ATM Mandiri")){
+            metodeP = "\nNo Rek : 5412751234123456"+"\nAtas Nama : Benyamin Simanungkalit";
+        }else {
+            metodeP = "\nNo Rek : 7712654312317006"+"\nAtas Nama : Ojaks Sidabukke";
+        }
+        String msgFinal ;
+            keterangan = "Pesanan Baru";
+            msgFinal = "\n Alamat Pengiriman : " + alamat +
+                    "\n Metode Pembayaran : " + metode +
+                    metodeP+
+                    "\nTotal Harga Pesanan : " + harga
+                    + "\n\n\n\nTerimakasih telah menggunakan aplikasi kami."+ "\nSampai jumpa di pesanan berikutnya ";
+        final String username = MailDefaults.EMAIL;
+        final String password = MailDefaults.PASSWORD;
+
+        Properties prop = new Properties();
+        prop.put("mail.smtp.host", "smtp.gmail.com");
+        prop.put("mail.smtp.port", "587");
+        prop.put("mail.smtp.auth", "true");
+        prop.put("mail.smtp.starttls.enable", "true"); //TLS
+
+        Session session = Session.getInstance(prop,
+                new javax.mail.Authenticator() {
+                    protected PasswordAuthentication getPasswordAuthentication() {
+                        return new PasswordAuthentication(username, password);
+                    }
+                });
+
+        try {
+            Message message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(MailDefaults.EMAIL));
+            message.setRecipients(
+                    Message.RecipientType.TO,
+                    InternetAddress.parse(email)
+            );
+            message.setSubject("Transaksi Portal Desa " + keterangan);
+            message.setText(msgFinal);
+
+            Transport.send(message);
+
+            System.out.println("Done");
+
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+        return "Success";
+    }
+
+    @Override
     public String sendEmailPenginapan(String idPesanan, Integer indikator) {
         DataTransaksiPnginapan dataTransaksi = searchDataTransaksiPenginapan(idPesanan);
 
