@@ -40,24 +40,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cb1cd72d-22e7-4066-aa5f-c0bb735bc78b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/TransaksiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/TransaksiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/ArtikelControllerRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/ArtikelControllerRoute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Artikel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Artikel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Penginapan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/Penginapan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/ProdukDesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/model/ProdukDesa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/TransaksiProdukRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/TransaksiProdukRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/MailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/ArtikelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/ArtikelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/TransaksiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/TransaksiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/ArtikelControllerRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/ArtikelControllerRoute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Artikel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Artikel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Penginapan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/Penginapan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/ProdukDesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/model/ProdukDesa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/TransaksiProdukRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/TransaksiProdukRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/MailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/MailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/MailServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/MailServiceImpl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/MailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/MailServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/PortalDesa/serviceImpl/KecamatanServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/PortalDesa/serviceImpl/KecamatanServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/PortalDesa/serviceImpl/PenginapanServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/PortalDesa/serviceImpl/PenginapanServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/PortalDesa/serviceImpl/KecamatanServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/PortalDesa/serviceImpl/KecamatanServiceImplTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,8 +138,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArtikelServiceImplTest.deleteTest">
-    <configuration name="ArtikelServiceImplTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProdukDesaServiceImplTests.findAllBySkuDesaTest">
+    <configuration name="PenginapanServiceImplTest.findBySkuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PortalDesa" />
       <extension name="coverage">
         <pattern>
@@ -163,14 +148,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
-      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ArtikelServiceImplTest" />
-      <option name="METHOD_NAME" value="deleteTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.PenginapanServiceImplTest" />
+      <option name="METHOD_NAME" value="findBySkuTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArtikelServiceImplTest.findAllArtikelBySkuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PenginapanServiceImplTest.skuGenereatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PortalDesa" />
       <extension name="coverage">
         <pattern>
@@ -179,14 +164,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
-      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ArtikelServiceImplTest" />
-      <option name="METHOD_NAME" value="findAllArtikelBySkuTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.PenginapanServiceImplTest" />
+      <option name="METHOD_NAME" value="skuGenereatorTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArtikelServiceImplTest.findDetailArtikelById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProdukDesaServiceImplTests.findAllBySkuDesaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PortalDesa" />
       <extension name="coverage">
         <pattern>
@@ -195,14 +180,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
-      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ArtikelServiceImplTest" />
-      <option name="METHOD_NAME" value="findDetailArtikelById" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ProdukDesaServiceImplTests" />
+      <option name="METHOD_NAME" value="findAllBySkuDesaTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArtikelServiceImplTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProdukDesaServiceImplTests.skuGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PortalDesa" />
       <extension name="coverage">
         <pattern>
@@ -211,14 +196,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
-      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ArtikelServiceImplTest" />
-      <option name="METHOD_NAME" value="saveTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ProdukDesaServiceImplTests" />
+      <option name="METHOD_NAME" value="skuGeneratorTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArtikelServiceImplTest.updateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProdukDesaServiceImplTests.subStrTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PortalDesa" />
       <extension name="coverage">
         <pattern>
@@ -227,8 +212,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
-      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ArtikelServiceImplTest" />
-      <option name="METHOD_NAME" value="updateTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ProdukDesaServiceImplTests" />
+      <option name="METHOD_NAME" value="subStrTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -243,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArtikelServiceImplTest.deleteTest" />
-        <item itemvalue="JUnit.ArtikelServiceImplTest.updateTest" />
-        <item itemvalue="JUnit.ArtikelServiceImplTest.saveTest" />
-        <item itemvalue="JUnit.ArtikelServiceImplTest.findDetailArtikelById" />
-        <item itemvalue="JUnit.ArtikelServiceImplTest.findAllArtikelBySkuTest" />
+        <item itemvalue="JUnit.ProdukDesaServiceImplTests.findAllBySkuDesaTest" />
+        <item itemvalue="JUnit.ProdukDesaServiceImplTests.subStrTest" />
+        <item itemvalue="JUnit.ProdukDesaServiceImplTests.skuGeneratorTest" />
+        <item itemvalue="JUnit.PenginapanServiceImplTest.skuGenereatorTest" />
+        <item itemvalue="JUnit.PenginapanServiceImplTest.findBySkuTest" />
       </list>
     </recent_temporary>
   </component>
@@ -345,7 +330,8 @@
       <workItem from="1591502467967" duration="16078000" />
       <workItem from="1591620723963" duration="12038000" />
       <workItem from="1591668350921" duration="5012000" />
-      <workItem from="1591720596228" duration="2610000" />
+      <workItem from="1591720596228" duration="2714000" />
+      <workItem from="1591754598567" duration="6810000" />
     </task>
     <servers />
   </component>

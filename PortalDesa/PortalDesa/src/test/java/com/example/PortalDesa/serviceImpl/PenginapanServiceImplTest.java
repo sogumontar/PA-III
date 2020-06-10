@@ -55,7 +55,7 @@ public class PenginapanServiceImplTest {
     }
 
     @Test
-    public void findBySku() {
+    public void findBySkuTest() {
         Penginapan penginapan1= new Penginapan();
         Mockito.when(penginapanRepo.findFirstBySku("SKU")).thenReturn(penginapan1);
         assertEquals(penginapan1,penginapanService.findBySku("SKU"));
