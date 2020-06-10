@@ -3,6 +3,7 @@ package com.example.PortalDesa.service;
 import com.example.PortalDesa.model.ProdukDesa;
 import com.example.PortalDesa.payload.request.ProdukDesaRequest;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -10,6 +11,8 @@ import java.util.List;
  */
 
 public interface ProdukDesaService {
+    public ProdukDesa findPopular();
+
     public String skuGenerator(String name, String desa);
 
     public String subStr(String str);
@@ -24,7 +27,7 @@ public interface ProdukDesaService {
 
     public void updateProduk(String sku, ProdukDesaRequest request);
 
-    public void updateProdukWithGambar(String sku, ProdukDesaRequest request);
+//    public void updateProdukWithGambar(String sku, ProdukDesaRequest request);
 
     public void suspendProduk(String sku);
 
@@ -35,4 +38,7 @@ public interface ProdukDesaService {
     public List<ProdukDesa> findAllSuspend();
 
     public void addGambarDesa(String base64, String sku);
+
+    public void updateGambarDesa(String base64, String sku);
+
 }

@@ -2,6 +2,7 @@ package com.example.PortalDesa.model;
 
 import com.example.PortalDesa.model.constant.FieldForTableDesa;
 import com.example.PortalDesa.model.constant.GlobalFieldConstant;
+import com.example.PortalDesa.model.constant.PathImageDb;
 import com.example.PortalDesa.model.constant.TablesConstant;
 import com.example.PortalDesa.model.defaults.KecamatanDefaults;
 import com.example.PortalDesa.model.timestamp.Timestamp;
@@ -36,7 +37,7 @@ public class Desa  {
     public KecamatanDefaults kecamatan;
 
     @Column(name = GlobalFieldConstant.FIELD_GAMBAR)
-    public String gambar;
+    public String gambar = PathImageDb.PATH_FOR_IMAGE_DESA+"Default.jpg";
 
     @Column(name = FieldForTableDesa.FIELD_STATUS)
     public int status;
@@ -59,13 +60,14 @@ public class Desa  {
     }
 
 
-    public Desa(String sku, String nama, KecamatanDefaults kecamatan, int status, String skuAdmin,String kec) {
+    public Desa(String sku, String nama, KecamatanDefaults kecamatan, int status, String skuAdmin,String kec,String gambar) {
         this.sku = sku;
         this.nama = nama;
         this.kecamatan = kecamatan;
         this.status = status;
         this.skuAdmin = skuAdmin;
         this.kec=kec;
+        this.gambar = gambar;
     }
 
     public String getKec() {

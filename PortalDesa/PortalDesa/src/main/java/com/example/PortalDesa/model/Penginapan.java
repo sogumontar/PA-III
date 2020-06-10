@@ -1,6 +1,7 @@
 package com.example.PortalDesa.model;
 
 import com.example.PortalDesa.model.constant.FieldForTablePenginapan;
+import com.example.PortalDesa.model.constant.PathImageDb;
 import com.example.PortalDesa.model.constant.TablesConstant;
 import lombok.NoArgsConstructor;
 
@@ -18,27 +19,28 @@ import javax.persistence.Table;
 public class Penginapan {
     @Id
     String sku;
-
     @Column(name = FieldForTablePenginapan.FIELD_NAMA_PENGINAPAN)
     String nama;
     @Column(name = FieldForTablePenginapan.FIELD_HARGA_PENGINAPAN)
     Integer harga;
-    @Column(name = FieldForTablePenginapan.FIELD_DESKRIPSI)
+    @Column(name = FieldForTablePenginapan.FIELD_DESKRIPSI, length=10485760)
     String deskripsi;
     @Column(name = FieldForTablePenginapan.FIELD_JUMLAH_KAMAR)
     Integer jumlahKamar;
     @Column(name = FieldForTablePenginapan.FIELD_LOKASI_PENGINAPAN)
     String lokasi;
     @Column(name = FieldForTablePenginapan.FIELD_GAMBAR_PENGINAPAN)
-    String gambar;
+    String gambar = PathImageDb.PATH_FOR_IMAGE_PENGINAPAN+"Default.jpg";
     @Column(name = FieldForTablePenginapan.FIELD_DESA)
     String desa;
     @Column(name = FieldForTablePenginapan.FIELD_KECAMATAN)
     String kecamatan;
+    @Column(name = FieldForTablePenginapan.FIELD_SKU_MERCHANT)
+    String skuMerchant;
     @Column(name = FieldForTablePenginapan.FIELD_STATUS)
     Integer status;
 
-    public Penginapan(String sku, String nama, Integer harga, String deskripsi, Integer jumlahKamar, String lokasi, String gambar, String desa, String kecamatan, Integer status) {
+    public Penginapan(String sku, String nama, Integer harga, String deskripsi, Integer jumlahKamar, String lokasi, String gambar, String desa, String kecamatan, String skuMerchant ,Integer status) {
         this.sku = sku;
         this.nama = nama;
         this.harga = harga;
@@ -48,7 +50,16 @@ public class Penginapan {
         this.gambar = gambar;
         this.desa = desa;
         this.kecamatan = kecamatan;
+        this.skuMerchant = skuMerchant;
         this.status = status;
+    }
+
+    public String getSkuMerchant() {
+        return skuMerchant;
+    }
+
+    public void setSkuMerchant(String skuMerchant) {
+        this.skuMerchant = skuMerchant;
     }
 
     public String getGambar() {

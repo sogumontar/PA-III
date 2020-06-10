@@ -23,6 +23,11 @@ public class UsersServiceImpl implements UsersService {
     }
 
     @Override
+    public Users findBySku(String sku) {
+        return usersRepo.findFirstBySku(sku);
+    }
+
+    @Override
     public List findAllAccountCustomer() {
         return usersRepo.findAllByRoles(1);
     }
@@ -35,5 +40,15 @@ public class UsersServiceImpl implements UsersService {
     @Override
     public List findAllAccountAdmin() {
        return usersRepo.findAllByRoles(2);
+    }
+
+    @Override
+    public Integer suspendAccount(String sku) {
+        return usersRepo.suspendBysku(sku);
+    }
+
+    @Override
+    public Integer activateAccount(String sku) {
+        return usersRepo.activateBysku(sku);
     }
 }

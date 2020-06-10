@@ -1,6 +1,7 @@
 package com.example.PortalDesa.model;
 
 import com.example.PortalDesa.model.constant.FieldForProdukDesa;
+import com.example.PortalDesa.model.constant.PathImageDb;
 import com.example.PortalDesa.model.constant.TablesConstant;
 import lombok.NoArgsConstructor;
 
@@ -26,13 +27,16 @@ public class ProdukDesa {
     Integer harga;
 
     @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_GAMBAR)
-    String gambar;
+    String gambar = PathImageDb.PATH_FOR_IMAGE_PRODUK_DESA+"Default.jpg";
 
-    @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_DESKRIPSI)
+    @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_DESKRIPSI, length=10485760)
     String deskripsi;
 
     @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_SKU_DESA)
     String skuDesa;
+
+    @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_JUMLAH_PEMBELIAN)
+    Integer jumlahPembelian;
 
     @Column(name = FieldForProdukDesa.FIELD_PRODUK_DESA_STATUS)
     Integer status;
@@ -46,6 +50,14 @@ public class ProdukDesa {
         this.deskripsi = deskripsi;
         this.skuDesa = skuDesa;
         this.status = status;
+    }
+
+    public Integer getJumlahPembelian() {
+        return jumlahPembelian;
+    }
+
+    public void setJumlahPembelian(Integer jumlahPembelian) {
+        this.jumlahPembelian = jumlahPembelian;
     }
 
     public String getSkuDesa() {
