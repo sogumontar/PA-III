@@ -25,67 +25,84 @@ import static org.junit.Assert.assertEquals;
  */
 public class ArtikelServiceImplTest {
     @Rule
-    public MockitoRule rule= MockitoJUnit.rule();
+    public MockitoRule rule = MockitoJUnit.rule();
+
+    public Artikel artikel = new Artikel(
+
+            "89a8s7d89h1jk2dasjdnm",
+            "Artikel judul",
+            "25-05-2020",
+            "Artikel",
+            "Ini isi Artikelnya",
+            "hendra.com",
+            "sogumontar hendra",
+            "HEND-0001",
+            1
+    );
 
     @Mock
-    public Artikel artikel;
-
-    @Mock
-    ArtikelRepo  artikelRepo;
+    ArtikelRepo artikelRepo;
 
     @InjectMocks
     ArtikelServiceImpl artikelService;
 
 
+    //Membaca Artikel, pengumuman, berita
     @Test
-    public void findAllArtikelForWeb(){
-        List artikel1= new ArrayList();
+    public void findAllArtikelForWeb() {
+        List artikel1 = new ArrayList();
         Mockito.when(artikelRepo.findAllForWeb()).thenReturn(artikel1);
-        assertEquals(artikel1,artikelService.findAllArtikelForWeb());
+        assertEquals(artikel1, artikelService.findAllArtikelForWeb());
         Mockito.verify(artikelRepo).findAllForWeb();
     }
 
+    //Membaca Artikel, pengumuman, berita
     @Test
-    public void findAllArtikelBySkuForWebTest(){
-        List artikel1= new ArrayList();
+    public void findAllArtikelBySkuForWebTest() {
+        List artikel1 = new ArrayList();
         Mockito.when(artikelRepo.findAllBySkuAdminForWeb("HEND-0001")).thenReturn(artikel1);
-        assertEquals(artikel1,artikelService.findAllArtikelBySkuForWeb("HEND-0001"));
+        assertEquals(artikel1, artikelService.findAllArtikelBySkuForWeb("HEND-0001"));
         Mockito.verify(artikelRepo).findAllBySkuAdminForWeb("HEND-0001");
     }
 
 
+    //Membaca Artikel, pengumuman, berita
     @Test
-    public void findDetailArtikelByIdForWebTest(){
+    public void findDetailArtikelByIdForWebTest() {
         Mockito.when(artikelRepo.findFirstByIdForWeb("123123-asdasd")).thenReturn(artikel);
-        assertEquals(artikel,artikelService.findDetailArtikelByIdForWeb("123123-asdasd"));
+        assertEquals(artikel, artikelService.findDetailArtikelByIdForWeb("123123-asdasd"));
         Mockito.verify(artikelRepo).findFirstByIdForWeb("123123-asdasd");
     }
 
+    //Membaca Artikel, pengumuman, berita
     @Test
-    public void findAllArtikelTest(){
-        List artikel1= new ArrayList();
+    public void findAllArtikelTest() {
+        List artikel1 = new ArrayList();
         Mockito.when(artikelRepo.findAll()).thenReturn(artikel1);
-        assertEquals(artikel1,artikelService.findAllArtikel());
+        assertEquals(artikel1, artikelService.findAllArtikel());
         Mockito.verify(artikelRepo).findAll();
     }
 
+    //Membaca Artikel, pengumuman, berita
     @Test
-    public void findAllArtikelBySkuTest(){
-        List artikel1= new ArrayList();
+    public void findAllArtikelBySkuTest() {
+        List artikel1 = new ArrayList();
         Mockito.when(artikelRepo.findAllBySkuAdmin("HEND-0001")).thenReturn(artikel1);
-        assertEquals(artikel1,artikelService.findAllArtikelBySku("HEND-0001"));
+        assertEquals(artikel1, artikelService.findAllArtikelBySku("HEND-0001"));
         Mockito.verify(artikelRepo).findAllBySkuAdmin("HEND-0001");
     }
 
+    //Membaca Artikel, pengumuman, berita
     @Test
-    public void findDetailArtikelByIdTest(){
+    public void findDetailArtikelByIdTest() {
         Mockito.when(artikelRepo.findFirstById("123123-asdasd")).thenReturn(artikel);
-        assertEquals(artikel,artikelService.findDetailArtikelById("123123-asdasd"));
+        assertEquals(artikel, artikelService.findDetailArtikelById("123123-asdasd"));
         Mockito.verify(artikelRepo).findFirstById("123123-asdasd");
     }
 
+    //Mengelola Artikel, pengumuman, berita
     @Test
-    public void saveTest(){
+    public void saveTest() {
         ArtikelRequest artikelRequest = new ArtikelRequest(
                 "judul",
                 "jenis",
@@ -104,15 +121,16 @@ public class ArtikelServiceImplTest {
                 "HEND-0001",
                 1
         );
-        Mockito.when(artikelService.save("HEND-0001",artikelRequest)).thenReturn(artikel2);
+        Mockito.when(artikelService.save("HEND-0001", artikelRequest)).thenReturn(artikel2);
         Mockito.when(artikelRepo.save(artikel)).thenReturn(artikel2);
-        assertEquals(null,artikelService.save("HEND-0001",artikelRequest));
+        assertEquals(null, artikelService.save("HEND-0001", artikelRequest));
 //        Mockito.verify(artikelRepo).save(artikel);
     }
 
+    //Mengelola Artikel, pengumuman, berita
     @Test
-    public void updateTest(){
-        String expectedResponse ="Update Sukses";
+    public void updateTest() {
+        String expectedResponse = "Update Sukses";
         ArtikelRequest artikelRequest = new ArtikelRequest(
                 "judul",
                 "jenis",
@@ -121,7 +139,7 @@ public class ArtikelServiceImplTest {
                 "penulis"
         );
 //        Mockito.when(artikelService.update("123456",artikelRequest)).thenReturn("artikel");
-        assertEquals(expectedResponse,artikelService.update("123456",artikelRequest));
+        assertEquals(expectedResponse, artikelService.update("123456", artikelRequest));
         Mockito.verify(artikelRepo).updateArtikel("123456",
                 artikelRequest.getIsi(),
                 artikelRequest.getJudul(),
