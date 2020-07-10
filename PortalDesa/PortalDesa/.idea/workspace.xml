@@ -40,7 +40,17 @@
   <component name="ChangeListManager">
     <list default="true" id="cb1cd72d-22e7-4066-aa5f-c0bb735bc78b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/KecamatanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/KecamatanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/KecamatanControllerRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/controller/route/KecamatanControllerRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/KecamatanRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/repository/KecamatanRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/KecamatanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/KecamatanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/KecamatanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/PortalDesa/service/implement/KecamatanServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/PortalDesa/serviceImpl/ArtikelServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/PortalDesa/serviceImpl/ArtikelServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/KecamatanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/KecamatanController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/KecamatanControllerRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/controller/route/KecamatanControllerRoute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/KecamatanRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/repository/KecamatanRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/KecamatanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/KecamatanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/KecamatanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/PortalDesa/service/implement/KecamatanServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/PortalDesa/serviceImpl/ArtikelServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/PortalDesa/serviceImpl/ArtikelServiceImplTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -137,7 +147,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AuthenticationServiceImplTest.checkRoleTest">
+  <component name="RunManager" selected="Spring Boot.PortalDesaApplication (1)">
+    <configuration name="ArtikelServiceImplTest.findAllArtikelForWebTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PortalDesa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.PortalDesa.serviceImpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ArtikelServiceImplTest" />
+      <option name="METHOD_NAME" value="findAllArtikelForWebTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArtikelServiceImplTest.findDetailArtikelByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PortalDesa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.PortalDesa.serviceImpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
+      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ArtikelServiceImplTest" />
+      <option name="METHOD_NAME" value="findDetailArtikelByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthenticationServiceImplTest.checkRoleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PortalDesa" />
       <extension name="coverage">
@@ -149,22 +191,6 @@
       <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
       <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.AuthenticationServiceImplTest" />
       <option name="METHOD_NAME" value="checkRoleTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PenginapanServiceImplTest.skuGenereatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PortalDesa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.PortalDesa.serviceImpl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
-      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.PenginapanServiceImplTest" />
-      <option name="METHOD_NAME" value="skuGenereatorTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,34 +212,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProdukDesaServiceImplTests.skuGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PortalDesaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="PortalDesa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.PortalDesa.serviceImpl.*" />
+          <option name="PATTERN" value="com.example.PortalDesa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
-      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ProdukDesaServiceImplTests" />
-      <option name="METHOD_NAME" value="skuGeneratorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProdukDesaServiceImplTests.subStrTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PortalDesa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.PortalDesa.serviceImpl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.PortalDesa.serviceImpl" />
-      <option name="MAIN_CLASS_NAME" value="com.example.PortalDesa.serviceImpl.ProdukDesaServiceImplTests" />
-      <option name="METHOD_NAME" value="subStrTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.PortalDesa.PortalDesaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -227,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PortalDesaApplication (1)" />
+        <item itemvalue="JUnit.ArtikelServiceImplTest.findAllArtikelForWebTest" />
+        <item itemvalue="JUnit.ArtikelServiceImplTest.findDetailArtikelByIdTest" />
         <item itemvalue="JUnit.AuthenticationServiceImplTest.checkRoleTest" />
         <item itemvalue="JUnit.ProdukDesaServiceImplTests.findAllBySkuDesaTest" />
-        <item itemvalue="JUnit.ProdukDesaServiceImplTests.subStrTest" />
-        <item itemvalue="JUnit.ProdukDesaServiceImplTests.skuGeneratorTest" />
-        <item itemvalue="JUnit.PenginapanServiceImplTest.skuGenereatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -332,6 +339,26 @@
       <workItem from="1591720596228" duration="2714000" />
       <workItem from="1591754598567" duration="7505000" />
       <workItem from="1591883608139" duration="3630000" />
+      <workItem from="1591954336554" duration="3133000" />
+      <workItem from="1591979548878" duration="2523000" />
+      <workItem from="1592023045444" duration="64000" />
+      <workItem from="1592065582066" duration="2311000" />
+      <workItem from="1592117820596" duration="274000" />
+      <workItem from="1592124876261" duration="1584000" />
+      <workItem from="1592145286569" duration="18000" />
+      <workItem from="1592152302089" duration="802000" />
+      <workItem from="1592199170265" duration="1409000" />
+      <workItem from="1592228929982" duration="182000" />
+      <workItem from="1592236947952" duration="3309000" />
+      <workItem from="1592273819293" duration="1457000" />
+      <workItem from="1592302853246" duration="14000" />
+      <workItem from="1592409096417" duration="30000" />
+      <workItem from="1592546073548" duration="290000" />
+      <workItem from="1592746216771" duration="2184000" />
+      <workItem from="1592793847364" duration="1396000" />
+      <workItem from="1593864414589" duration="841000" />
+      <workItem from="1594004854626" duration="3264000" />
+      <workItem from="1594350960103" duration="8252000" />
     </task>
     <servers />
   </component>

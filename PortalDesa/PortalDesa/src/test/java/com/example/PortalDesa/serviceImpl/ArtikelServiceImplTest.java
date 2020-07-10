@@ -49,7 +49,7 @@ public class ArtikelServiceImplTest {
 
     //Membaca Artikel, pengumuman, berita
     @Test
-    public void findAllArtikelForWeb() {
+    public void findAllArtikelForWebTest() {
         List artikel1 = new ArrayList();
         Mockito.when(artikelRepo.findAllForWeb()).thenReturn(artikel1);
         assertEquals(artikel1, artikelService.findAllArtikelForWeb());
